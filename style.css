@@ -1,0 +1,8 @@
+/* セレクタ {
+  プロパティ: 値;
+} */
+
+div, p {
+  color: red;
+  font-size: 80px;
+}
