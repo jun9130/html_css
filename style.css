@@ -1,8 +1,11 @@
-/* セレクタ {
+/* セレクタ- {
   プロパティ: 値;
 } */
 
-div, p {
+div {
   color: red;
-  font-size: 80px;
+  font-size: 3rem;
+  background-color: rgba(7, 220, 18, 0.358);
+  width: calc(100% / 3);
+  margin: 100px 0 50px 100px;
 }
