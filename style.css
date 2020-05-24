@@ -1,11 +1,38 @@
-/* セレクタ- {
-  プロパティ: 値;
+/* セレクタの種類 */
+
+/* h1, p{
+  background-color: pink;
 } */
 
-div {
+a[href] {
   color: red;
-  font-size: 3rem;
-  background-color: rgba(7, 220, 18, 0.358);
-  width: calc(100% / 3);
-  margin: 100px 0 50px 100px;
 }
+
+/* first-childとfirst-of-typeの違い */
+/* article p:first-of-type {
+  color: red;
+} */
+
+/* not属性 */
+/* article p:not(:first-of-type) {
+  color: red;
+} */
+
+/* hove属性 */
+/* p:hover{
+  background-color: pink;
+} */
+
+/* 擬似属性 */
+h1::after {
+  content: "!!!!";
+}
+h1::before {
+  content: "?????";
+}
+
+/* first-letterとfirst-line */
+p::first-letter {
+  font-size: 60px;
+}
+
