@@ -1,9 +1,17 @@
-#pond {
-  display: flex;
-justify-content: flex-end;
+@media screen and (min-width:0px){
+  body{
+    color: red;
+  }
 }
 
-/* #pond {
-  display: flex;
-  justify-content: center;
-} */
+@media screen and (min-width:300px){
+  body{
+    color: yellow;
+  }
+}
+
+@media screen and (min-width:600px){
+  body{
+    color:pink;
+  }
+}
