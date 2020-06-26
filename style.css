@@ -1,7 +1,36 @@
 .box1 {
-  background-color: red;
+  background-color: pink;
 }
 
 .box2 {
   background-color: green;
+}
+
+.box3 {
+  background-color: yellow;
+}
+
+
+
+
+@media (min-width: 1200px) {
+  
+}
+
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 768px)  {
+  .box1{
+    background-color: blue;
+  }
+}
+
+/* 576px以上 */
+@media (min-width: 576px) {
+  .box1{
+    background-color: red;
+  }
 }
