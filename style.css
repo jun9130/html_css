@@ -3,34 +3,48 @@
 }
 
 .box2 {
-  background-color: green;
+  background-color: orchid;
 }
-
-.box3 {
-  background-color: yellow;
-}
-
-
-
 
 @media (min-width: 1200px) {
-  
+  .box1 {
+    background-color: blueviolet;
+  }
+  .box1:before {
+    font-size: 14px;
+    content: "XL";
+  }
 }
-
 
 @media (min-width: 992px) {
-
+  .box1 {
+    background-color: orange;
+  }
+  
+  .box1:before {
+    font-size: 14px;
+    content: "L";
+  }
 }
 
-@media (min-width: 768px)  {
-  .box1{
+@media (min-width: 768px) {
+  .box1 {
     background-color: blue;
+  }
+  .box1:before {
+    font-size: 14px;
+    content: "m";
   }
 }
 
 /* 576px以上 */
+
 @media (min-width: 576px) {
-  .box1{
+  .box1 {
     background-color: red;
+  }
+  .box1:before {
+    font-size: 14px;
+    content: "sm";
   }
 }
