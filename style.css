@@ -1,11 +1,20 @@
+/* .col-4 {
+  background-color: red;
+}
+
+.col-8 {
+  background-color: yellow;
+}
+
+
 .box1 {
   background-color: pink;
 }
 
 .box2 {
   background-color: orchid;
-}
-
+} */
+/* 
 @media (min-width: 1200px) {
   .box1 {
     background-color: blueviolet;
@@ -39,7 +48,7 @@
 
 /* 576px以上 */
 
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
   .box1 {
     background-color: red;
   }
@@ -47,4 +56,33 @@
     font-size: 14px;
     content: "sm";
   }
+} */ 
+
+
+
+.profile {
+  border-radius: 1em;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  background: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.18);
+  overflow: hidden;
+}
+
+.profile__inner {
+  position: relative;
+}
+
+.avater {
+  overflow: hidden;
+  width: 250px;
+  height: 250px;
+  border: #fff 5px solid;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  background: red;
 }
