@@ -1,63 +1,7 @@
-/* .col-4 {
+.box1{
   background-color: red;
 }
 
-.col-8 {
-  background-color: yellow;
-}
-
-
-.box1 {
-  background-color: pink;
-}
-
-.box2 {
-  background-color: orchid;
-} */
-
-/* 
-@media (min-width: 1200px) {
-  .box1 {
-    background-color: blueviolet;
-  }
-  .box1:before {
-    font-size: 14px;
-    content: "XL";
-  }
-}
-
-@media (min-width: 992px) {
-  .box1 {
-    background-color: orange;
-  }
-  
-  .box1:before {
-    font-size: 14px;
-    content: "L";
-  }
-}
-
-@media (min-width: 768px) {
-  .box1 {
-    background-color: blue;
-  }
-  .box1:before {
-    font-size: 14px;
-    content: "m";
-  }
-}
-
-/* 576px以上 */
-
-/* @media (min-width: 576px) {
-  .box1 {
-    background-color: red;
-  }
-  .box1:before {
-    font-size: 14px;
-    content: "sm";
-  }
-} */
 
 
 .upper-mypage {
@@ -76,4 +20,88 @@
   border: #fff 5px solid;
   border-radius: 50%;
   object-fit: cover;
+  /* margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  background: #fff; */
+}
+
+@media (max-width: 1200px) {
+  .upper-mypage__left__avatar {
+    overflow: hidden;
+    width: 220px;
+    height: 220px;
+    border: #fff 5px solid;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .box1{
+    background-color: blue;
+  }
+  .box1:before {
+    font-size: 0.8rem;
+    content: "XL";
+  }
+}
+
+@media (max-width: 992px) {
+  .upper-mypage__left__avatar {
+    overflow: hidden;
+    width: 180px;
+    height: 180px;
+    border: #fff 5px solid;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .box1{
+    background-color: yellow;
+  }
+  .box1:before {
+    font-size: 0.8rem;
+    content: "画像を真ん中に";
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .upper-mypage__left__avatar {
+    overflow: hidden;
+    width: 130px;
+    height: 130px;
+    border: #fff 5px solid;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .box1{
+    background-color: pink;
+  }
+  .box1:before {
+    font-size: 0.8rem;
+    content: "M";
+  }
+}
+
+@media (max-width: 576px) {
+  .upper-mypage__left__avatar {
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    border: #fff 5px solid;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .box1{
+    background-color: green;
+  }
+  .box1:before {
+    font-size: 0.8rem;
+    content: "S";
+  }
+}
+
+
+img.avatar {
+  display: block;
+  width: 100%;
+  height: auto;
 }
