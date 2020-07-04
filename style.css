@@ -105,3 +105,8 @@ img.avatar {
   width: 100%;
   height: auto;
 }
+
+.test1 {
+  background-color: red;
+  display: none;
+}
