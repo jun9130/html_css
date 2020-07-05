@@ -1,8 +1,6 @@
-.box1{
+.box1 {
   background-color: red;
 }
-
-
 
 .upper-mypage {
   width: 80%;
@@ -26,6 +24,20 @@
   background: #fff; */
 }
 
+.upper-mypage__right__username {
+  padding-top: 48px;
+}
+
+.upper-mypage__right__profile {
+  padding-top: 48px;
+}
+
+img.avatar {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 @media (max-width: 1200px) {
   .upper-mypage__left__avatar {
     overflow: hidden;
@@ -35,7 +47,7 @@
     border-radius: 50%;
     object-fit: cover;
   }
-  .box1{
+  .box1 {
     background-color: blue;
   }
   .box1:before {
@@ -45,6 +57,10 @@
 }
 
 @media (max-width: 992px) {
+  .upper-mypage__left {
+    display: flex;
+    justify-content: center;
+  }
   .upper-mypage__left__avatar {
     overflow: hidden;
     width: 180px;
@@ -53,60 +69,52 @@
     border-radius: 50%;
     object-fit: cover;
   }
-  .box1{
+  .upper-mypage__right {
+    display: flex;
+    justify-content: center;
+    
+  }
+  .upper-mypage__right__username {
+    padding: 0 0 10px 0;
+  }
+
+  .upper-mypage__right__profile {
+    display: none;
+  }
+  .box1 {
     background-color: yellow;
   }
   .box1:before {
     font-size: 0.8rem;
-    content: "画像を真ん中に";
+    content: "L";
   }
-  
-}
-
-@media (max-width: 768px) {
-  .upper-mypage__left__avatar {
-    overflow: hidden;
-    width: 130px;
-    height: 130px;
-    border: #fff 5px solid;
-    border-radius: 50%;
-    object-fit: cover;
+  @media (max-width: 768px) {
+    .upper-mypage__left__avatar {
+      overflow: hidden;
+      border: #fff 5px solid;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .box1 {
+      background-color: pink;
+    }
+    .box1:before {
+      font-size: 0.8rem;
+      content: "M";
+    }
   }
-  .box1{
-    background-color: pink;
+  @media (max-width: 576px) {
+    .upper-mypage__left__avatar {
+      overflow: hidden;
+      border: #fff 5px solid;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .box1 {
+      background-color: green;
+    }
+    .box1:before {
+      font-size: 0.8rem;
+      content: "S";
+    }
   }
-  .box1:before {
-    font-size: 0.8rem;
-    content: "M";
-  }
-}
-
-@media (max-width: 576px) {
-  .upper-mypage__left__avatar {
-    overflow: hidden;
-    width: 100px;
-    height: 100px;
-    border: #fff 5px solid;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  .box1{
-    background-color: green;
-  }
-  .box1:before {
-    font-size: 0.8rem;
-    content: "S";
-  }
-}
-
-
-img.avatar {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.test1 {
-  background-color: red;
-  display: none;
-}
