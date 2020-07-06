@@ -2,6 +2,8 @@
   background-color: red;
 }
 
+
+
 .upper-mypage {
   width: 80%;
   margin: 0 auto;
@@ -36,6 +38,10 @@ img.avatar {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.btn-primary {
+  font-size: 0.2rem;
 }
 
 /* .user-edit-button {
@@ -98,6 +104,8 @@ img.avatar {
     font-size: 0.8rem;
     content: "L";
   }
+}
+
   @media (max-width: 768px) {
     .upper-mypage__left__avatar {
       overflow: hidden;
@@ -113,6 +121,7 @@ img.avatar {
       content: "M";
     }
   }
+  
   @media (max-width: 576px) {
     .upper-mypage__left__avatar {
       overflow: hidden;
