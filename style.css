@@ -38,6 +38,16 @@ img.avatar {
   height: auto;
 }
 
+/* .user-edit-button {
+  float: right;
+  display: inline-block;
+  margin-left: 10px;
+  padding: 7px 20px;
+  border-radius: 30px; 
+  background: green;
+  color: white;
+} */
+
 @media (max-width: 1200px) {
   .upper-mypage__left__avatar {
     overflow: hidden;
