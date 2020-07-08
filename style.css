@@ -1,4 +1,4 @@
-.box1 {
+/* .box1 {
   background-color: red;
 }
 
@@ -11,6 +11,7 @@
 
 .upper-mypage__right__username {
   font-size: 1.7rem;
+  padding-top: 48px;
 }
 
 .upper-mypage__left__avatar {
@@ -20,15 +21,8 @@
   border: #fff 5px solid;
   border-radius: 50%;
   object-fit: cover;
-  /* margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  background: #fff; */
 }
 
-.upper-mypage__right__username {
-  padding-top: 48px;
-}
 
 .upper-mypage__right__profile {
   padding-top: 48px;
@@ -43,16 +37,6 @@ img.avatar {
 .btn-primary {
   font-size: 0.2rem;
 }
-
-/* .user-edit-button {
-  float: right;
-  display: inline-block;
-  margin-left: 10px;
-  padding: 7px 20px;
-  border-radius: 30px; 
-  background: green;
-  color: white;
-} */
 
 @media (max-width: 1200px) {
   .upper-mypage__left__avatar {
@@ -136,4 +120,19 @@ img.avatar {
       font-size: 0.8rem;
       content: "S";
     }
+  } */
+
+
+
+  /* index2学習用 */
+  .title {
+    background-color: pink;
+  }
+
+  .subTitle {
+    color: green;
+  }
+
+  a:hover {
+    color: coral;
   }
