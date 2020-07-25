@@ -1,52 +1,24 @@
-/* .box1 {
+.box1 {
+  background-color: aqua;
+}
+
+.left {
   background-color: red;
 }
-
-
-
-.upper-mypage {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.upper-mypage__right__username {
-  font-size: 1.7rem;
-  padding-top: 48px;
-}
-
-.upper-mypage__left__avatar {
-  overflow: hidden;
-  width: 250px;
-  height: 250px;
-  border: #fff 5px solid;
+.avatar {
   border-radius: 50%;
   object-fit: cover;
 }
 
-
-.upper-mypage__right__profile {
-  padding-top: 48px;
+.center {
+  background-color: yellow;
 }
 
-img.avatar {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.btn-primary {
-  font-size: 0.2rem;
+.right {
+  background-color: green;
 }
 
 @media (max-width: 1200px) {
-  .upper-mypage__left__avatar {
-    overflow: hidden;
-    width: 220px;
-    height: 220px;
-    border: #fff 5px solid;
-    border-radius: 50%;
-    object-fit: cover;
-  }
   .box1 {
     background-color: blue;
   }
@@ -57,30 +29,6 @@ img.avatar {
 }
 
 @media (max-width: 992px) {
-  .upper-mypage__left {
-    display: flex;
-    justify-content: center;
-  }
-  .upper-mypage__left__avatar {
-    overflow: hidden;
-    width: 180px;
-    height: 180px;
-    border: #fff 5px solid;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  .upper-mypage__right {
-    display: flex;
-    justify-content: center;
-    
-  }
-  .upper-mypage__right__username {
-    padding: 0 0 10px 0;
-  }
-
-  .upper-mypage__right__profile {
-    display: none;
-  }
   .box1 {
     background-color: yellow;
   }
@@ -90,42 +38,29 @@ img.avatar {
   }
 }
 
-  @media (max-width: 768px) {
-    .upper-mypage__left__avatar {
-      overflow: hidden;
-      border: #fff 5px solid;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-    .box1 {
-      background-color: pink;
-    }
-    .box1:before {
-      font-size: 0.8rem;
-      content: "M";
-    }
+@media (max-width: 768px) {
+  .box1 {
+    background-color: pink;
   }
-  
-  @media (max-width: 576px) {
-    .upper-mypage__left__avatar {
-      overflow: hidden;
-      border: #fff 5px solid;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-    .box1 {
-      background-color: green;
-    }
-    .box1:before {
-      font-size: 0.8rem;
-      content: "S";
-    }
-  } */
+  .box1:before {
+    font-size: 0.8rem;
+    content: "M";
+  }
+}
 
+@media (max-width: 576px) {
+  .box1 {
+    background-color: green;
+  }
+  .box1:before {
+    font-size: 0.8rem;
+    content: "S";
+  }
+}
 
+/* index2学習用 */
 
-  /* index2学習用 */
-  .title {
+/* .title {
     background-color: pink;
   }
 
@@ -135,4 +70,4 @@ img.avatar {
 
   a:hover {
     color: coral;
-  }
+  } */
