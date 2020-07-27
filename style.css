@@ -21,12 +21,12 @@
 .review-delete-btn {
   display: inline-block;
   font-size: 0.7rem;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   padding: 7px 20px;
   border-radius: 30px;
   background: red;
   float: right;
-  clear: both
+
 }
 
 @media (max-width: 1200px) {
