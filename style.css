@@ -1,32 +1,5 @@
-.box1 {
+/* .box1 {
   background-color: aqua;
-}
-
-.left {
-  background-color: red;
-}
-.avatar {
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.center {
-  background-color: yellow;
-}
-
-.right {
-  background-color: green;
-}
-
-.review-delete-btn {
-  display: inline-block;
-  font-size: 0.7rem;
-  /* margin-left: 10px; */
-  padding: 7px 20px;
-  border-radius: 30px;
-  background: red;
-  float: right;
-
 }
 
 @media (max-width: 1200px) {
@@ -67,18 +40,15 @@
     font-size: 0.8rem;
     content: "S";
   }
-}
+} */
 
 /* index2学習用 */
+div {
+  background-color: green;
+}
 
-/* .title {
+@media (min-width: 600px) {
+  div {
     background-color: pink;
   }
-
-  .subTitle {
-    color: green;
-  }
-
-  a:hover {
-    color: coral;
-  } */
+}
