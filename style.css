@@ -43,7 +43,7 @@
 } */
 
 /* index2学習用 */
-div {
+/* div {
   background-color: green;
 }
 
@@ -51,4 +51,12 @@ div {
   div {
     background-color: pink;
   }
+} */
+
+.page {
+  background-color: red;
+}
+.logo {
+  background-color: yellow;
+  margin-left: 120px;
 }
