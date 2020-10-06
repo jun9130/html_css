@@ -53,10 +53,11 @@
   }
 } */
 
-.page {
-  background-color: red;
-}
-.logo {
+
+
+/* アプリ用 */
+.top-image {
+  height: 31rem;
+  width: 100%;
   background-color: yellow;
-  margin-left: 120px;
 }
