@@ -56,17 +56,30 @@
 
 
 /* アプリ用 */
+.top {
+  padding: 50px 30px;
+}
+
 .top-image {
   height: 31rem;
   width: 100%;
   background-color: yellow;
 }
+
+.top-group {
+ 
+}
+
+.tag-list {
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  box-shadow: 0 0 4px #dcdcdc;
+}
+
 .top-contents__shop {
   padding: 32px 12px;
   position: relative; /* 帯の表示位置の基準とする */
 }
-
-
 
 .top-contents__shop p {
   color: #fff;
