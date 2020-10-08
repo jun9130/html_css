@@ -8,11 +8,21 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+  <style>
+    a, a:hover {
+      color: #fff;
+    }
+    a:hover {
+      opacity: 0.5; /* リンクの透明度 */
+      text-decoration: none; /* 下線消す */
+    } 
+  </style>
 </head>
 
 <body>
-  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <div class="home">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -23,33 +33,37 @@
     </div>
   </nav> -->
 
-  <div class="top-image">
-    <h1 class="catchCopy"></h1>
-  </div>
+    <div class="top-image">
+      <h1 class="catchCopy"></h1>
+    </div>
 
-  <div class="container my-5">
+    <div class="top container my-5">
 
-    <div class="top">
-
-      <div class="top-group">
+      <!-- 1 -->
+      <div class="top-group mb-5 p-5">
         <div class="top-title">
-          <h3>#タグ</h3>
+          <h3>タグから探す</h3>
         </div>
         <div class="tag-content">
-          <ul class="tag-list">
-            <li class="tag-item">50席以上</li>
-            <li class="tag-item">チェーン店</li>
-            <li class="tag-item">wi-fiあり</li>
-            <li class="tag-item"></li>
-            <li class="tag-item"></li>
+          <ul class="tag-list p-3">
+            <li class="tag-item mt-1 mr-2 py-1 px-2"><a href="#" class="tag-item-link">wi-fiあり</a></li>
+            <li class="tag-item mt-1 mr-2 py-1 px-2"><a href="#" class="tag-item-link">電源あり</a></li>
+            <li class="tag-item mt-1 mr-2 py-1 px-2"><a href="#" class="tag-item-link">駅から徒歩5分</a></li>
+            <li class="tag-item mt-1 mr-2 py-1 px-2"><a href="#" class="tag-item-link">50席以上</a></li>
+            <li class="tag-item mt-1 mr-2 py-1 px-2"><a href="#" class="tag-item-link">禁煙</a></li>
+            <li class="tag-item mt-1 mr-2 py-1 px-2"><a href="#" class="tag-item-link">分煙</a></li>
+            <li class="tag-item mt-1 mr-2 py-1 px-2"><a href="#" class="tag-item-link">喫煙可</a></li>
+            <li class="tag-item mt-1 mr-2 py-1 px-2"><a href="#" class="tag-item-link">チェーン店</a></li>
+            <li class="tag-item mt-1 mr-2 py-1 px-2"><a href="#" class="tag-item-link">純喫茶</a></li>
           </ul>
         </div>
       </div>
 
+
       <!-- 2 -->
-      <div class="top-group">
+      <div class="top-group mb-5 p-5">
         <div class="top-title">
-          <h3>#新着順</h3>
+          <h3>新着順</h3>
         </div>
         <div class="top-content row">
           <div class="top-contents__shop col-md-4 col-xs-12 ">
@@ -60,7 +74,6 @@
       </div>
 
     </div>
-
   </div>
 
 
