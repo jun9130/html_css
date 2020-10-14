@@ -140,3 +140,8 @@ ul {
   bottom: 0;           /* 基準からみて下寄せ */
   background: rgba(0,0,0,0.5);  /* 半透明の背景。 */
 }
+
+
+.shop-images {
+  background-color: green;
+}
