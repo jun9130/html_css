@@ -9,203 +9,86 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <style>
-    a, a:hover {
+    body {
+      background-color: #f5f5f5;
+    }
+
+    a,
+    a:hover {
       color: #fff;
     }
+
     a:hover {
-      opacity: 0.5; /* リンクの透明度 */
-      text-decoration: none; /* 下線消す */
-    } 
+      opacity: 0.5;
+      /* リンクの透明度 */
+      text-decoration: none;
+      /* 下線消す */
+    }
+
+    .shop-data {
+      background-color: #fff;
+    }
+
+    .review-delete-btn {
+      display: inline-block;
+      font-size: 0.7rem;
+      margin-left: 10px;
+      padding: 7px 20px;
+      border-radius: 30px;
+      background: $green;
+      color: $white;
+    }
+
+    .review-avatar {
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .shop-reviews__content__left__user-name {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-size: 0.8rem;
+
+    }
   </style>
 </head>
 
 <body>
-
-  <!-- <div class="home">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <div>aaaaaaaa</div>
-    </div>
-  </nav>
-
-    <div class="top-image">
-      <h1 class="catchCopy"></h1>
-    </div>
-
-    <div class="top container my-5">
-      <div class="top-group mb-5 p-5">
-        <div class="top-title">
-          <h3>タグから探す</h3>
-        </div>
-        <div class="tag-content row">
-          <ul class="tag-list p-3">
-            <li class="tag-item mt-1 mr-2 py-1 px-2"><a href="#" class="tag-item-link">wi-fiあり</a></li>
-            <li class="tag-item mt-1 mr-2 py-1 px-2"><a href="#" class="tag-item-link">電源あり</a></li>
-            <li class="tag-item mt-1 mr-2 py-1 px-2"><a href="#" class="tag-item-link">駅から徒歩5分</a></li>
-            <li class="tag-item mt-1 mr-2 py-1 px-2"><a href="#" class="tag-item-link">50席以上</a></li>
-            <li class="tag-item mt-1 mr-2 py-1 px-2"><a href="#" class="tag-item-link">禁煙</a></li>
-            <li class="tag-item mt-1 mr-2 py-1 px-2"><a href="#" class="tag-item-link">分煙</a></li>
-            <li class="tag-item mt-1 mr-2 py-1 px-2"><a href="#" class="tag-item-link">喫煙可</a></li>
-            <li class="tag-item mt-1 mr-2 py-1 px-2"><a href="#" class="tag-item-link">チェーン店</a></li>
-            <li class="tag-item mt-1 mr-2 py-1 px-2"><a href="#" class="tag-item-link">純喫茶</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="top-group mb-5 p-5">
-        <div class="top-title">
-          <h3>新着順</h3>
-        </div>
-        <div class="top-content row">
-          <div class="top-contents__shop col-md-4 col-xs-12 ">
-            <img src="https://placehold.jp/300x300.png" class="img-fluid mx-auto d-block" alt="Responsive image" width="300" height="300">
-          </div>
-          <div class="top-contents__shop col-md-4 col-xs-12 ">
-            <img src="https://placehold.jp/300x300.png" class="img-fluid mx-auto d-block" alt="Responsive image">
-          </div>
-          <div class="top-contents__shop col-md-4 col-xs-12 ">
-            <img src="https://placehold.jp/300x300.png" class="img-fluid mx-auto d-block" alt="Responsive image">
-          </div>
-          <div class="top-contents__shop col-md-4 col-xs-12 ">
-            <img src="https://placehold.jp/300x300.png" class="img-fluid mx-auto d-block" alt="Responsive image">
-          </div>
-          <div class="top-contents__shop col-md-4 col-xs-12 ">
-            <img src="https://placehold.jp/300x300.png" class="img-fluid mx-auto d-block" alt="Responsive image">
-          </div>
-          <div class="top-contents__shop col-md-4 col-xs-12 ">
-            <img src="https://placehold.jp/300x300.png" class="img-fluid mx-auto d-block" alt="Responsive image">
-          </div>
-          <div class="top-contents__shop col-md-4 col-xs-12 ">
-            <img src="https://placehold.jp/300x300.png" class="img-fluid mx-auto d-block" alt="Responsive image">
-          </div>
-          <div class="top-contents__shop col-md-4 col-xs-12 ">
-            <img src="https://placehold.jp/300x300.png" class="img-fluid mx-auto d-block" alt="Responsive image">
-          </div>
-          <div class="top-contents__shop col-md-4 col-xs-12 ">
-            <img src="https://placehold.jp/300x300.png" class="img-fluid mx-auto d-block" alt="Responsive image">
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-  <div class="onimg">
-    <img src="https://placehold.jp/300x300.png" alt="画像名">
-    <p>画像の名前が入るよ</p>
-  </div> -->
-  
-
   <div class="shop-data container my-5">
-    <div class="shop-data__upper pt-5 pb-3 pl-5">
-      <div class=" shop-data__upper__name font-weight-bold">
-        スターバックスコーヒー
+    <div class="shop-review my-5 pl-5">
+      <div class="shop-review__title font-weight-bold mb-3">
+        レビュー一覧
+        <a class="shop-review-button float-right" href="#">レビューを書く</a>
       </div>
-      <div class="shop-data__upper__registered-person">
-        登録者: テストユーザー
-      </div>
-    </div>
-  
-    <!-- <div class="shop-content mb-5 pb-3 pl-5">
-      <div class="shop-images d-flex align-items-stretch">
-        <div class="shop-main-image">
-          <img src="https://placehold.jp/300x300.png" alt="" height="330" width="500">
-        </div>
-        <div class="shop-other-images ml-1">
-          <img src="https://placehold.jp/300x300.png" alt="" height="165" width="200">
-          <img src="https://placehold.jp/300x300.png" alt="" height="165" width="200">
-          <img src="https://placehold.jp/300x300.png" alt="" height="165" width="200">
-          <img src="https://placehold.jp/300x300.png" alt="" height="165" width="200">
-          
-        </div>
-      </div>
-    </div> -->
-  
-    <div class="shop-content mb-5 pb-3 pl-5">
-      <div class="shop-images d-flex flex-lg-row flex-column">
-        <div class="shop-main-image">
-          <img src="https://placehold.jp/300x300.png" alt="" height="330" width="500">
-        </div>
-        <table class="table ml-3">
-          <tbody><tr>
-          <th>
-          最寄駅
-          </th><td>
-          渋谷駅
-          </td>
-          
-          </tr>
-          <tr>
-          <th>
-          住所
-          </th><td>
-          東京都渋谷区宇田川町３−７ hotel koe tokyo 1F
-          </td>
-          
-          </tr>
-          <tr>
-          <th>
-          営業時間
-          </th><td>
-          7:30~23:00
-          </td>
-          
-          </tr>
-          <tr>
-          <th>
-          定休日
-          </th><td>
-          不定休
-          </td>
-          
-          </tr>
-          <tr>
-          <th>
-          席数
-          </th><td>
-          71席
-          </td>
-          
-          </tr>
-          <tr>
-          <th>
-          タグ
-          </th><td>
-          <div class="tag-name">
-          <a class="tag-name-button" href="/tags/1/shops">wi-fiあり</a>
+      <div class="shop-review__wrapper pb-5">
+        <div class="shop-reviews__content pt-3 pb-3">
+          <div class="shop-reviews__content__left mr-3 pb-3 col-1">
+            <div class="shop-reviews__content__left__avatar">
+              <a href="#"><img alt="アバター" class="review-avatar my-1" src="https://placehold.jp/300x300.png"></a>
+            </div>
+            <div class="shop-reviews__content__left__user-name text-center">
+              <a class="text-dark" href="#">taro</a>
+            </div>
           </div>
-          <div class="tag-name">
-          <a class="tag-name-button" href="/tags/2/shops">電源あり</a>
-          </div>
-          <div class="tag-name">
-          <a class="tag-name-button" href="/tags/4/shops">50席以上</a>
-          </div>
-          </td>
-          
-          </tr>
-          <tr>
-          <th>
-          お気に入り
-          </th><td>
-          <a class="like-button" data-remote="true" rel="nofollow" data-method="delete" href="/shops/3/likes/3"><i class="fas fa-heart"></i>
-          1
-          </a>
-          </td>
-          
-          </tr>
-          </tbody></table>
-      </div>
-    </div>
-  
-  
-  
-  </div>
+          <div class="shop-reviews__content__main col-9">
+            <div class="shop-reviews__content__main__text mr-3 pt-3">
+              何度か訪れていますが、やはり雰囲気が落ち着きます
+            </div>
+            <div class="shop-reviews__content__main__star">
+              2020/11/12
+              <img src="#"><img src="#"><img src="#"><img src="#">
+              <img src="#"></div>
+            <div class="shop-reviews__content__delete col-2">
+            </div>
 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
