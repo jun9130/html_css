@@ -13,10 +13,10 @@
       background-color: #f5f5f5;
     }
 
-    a,
+    /* a,
     a:hover {
       color: #fff;
-    }
+    } */
 
     a:hover {
       opacity: 0.5;
@@ -25,87 +25,57 @@
       /* 下線消す */
     }
 
-    .shop-data {
-      background-color: #fff;
+    img.shop-first-image {
+      width: 300px;
+      height: 300px;
     }
 
-    .review-delete-btn {
-      display: inline-block;
-      font-size: 0.7rem;
-      margin-left: 10px;
-      padding: 7px 20px;
-      border-radius: 30px;
-      background: $green;
-      color: $white;
+    .top-contents__shop {
+      position: relative;
     }
 
-    .review-avatar {
-      height: 60px;
-      width: 60px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-
-    .shop-reviews__content__left__user-name {
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      font-size: 0.8rem;
-
+    .top-contents__shop-access {
+      position: absolute;
+      /* relativeの要素を基準にする */
+      left: 12px;
+      /* 基準からみて左寄せ */
+      top: 48px;
+      background-color: green;
+      color: white;
+      padding: 0.65rem 0.65rem;
+      min-width: 5rem;
+      text-align: center;
     }
   </style>
 </head>
 
 <body>
-  <div class="shop-data container my-5">
-    <div class="user-review row py-5">
-      <div class="user-review-img col-5">
-        <img src="https://placehold.jp/300x300.png" alt="画像">
+  <div class="top container my-5">
+    <div class="top-group mb-5 p-5">
+      <div class="top-title">
+        <h3 class="font-weight-bold">新着順</h3>
       </div>
-      <div class="user-review-content col-7">
-        <div class="user-review-content__shop-name">
-          スターバックス
-        </div>
-        <div class="user-review-content__text">
-          aaaaaaaaaaaaaaaaaaaaaa
+      <div class="top-contents row">
+        <div class="top-contents__shop py-5 font-weight-bold">
+          <a class="link" href="#">
+            <div class="top-contents__shop-access font-weight-bold">
+              渋谷駅
+            </div>
+            <div class="top-contents__shop-image">
+            </div>
+            <img class="shop-first-image mx-auto d-block"
+              src="https://placehold.jp/300x300.png">
+              <div class="top-contents__shop-name font-weight-bold">
+                koe' lobby
+              </div>
+          </a>
+
         </div>
       </div>
     </div>
   </div>
 
 
-  <!-- <div class="shop-data container my-5">
-    <div class="shop-review my-5 pl-5">
-      <div class="shop-review__title font-weight-bold mb-3">
-        レビュー一覧
-        <a class="shop-review-button float-right" href="#">レビューを書く</a>
-      </div>
-      <div class="shop-review__wrapper pb-5">
-        <div class="shop-reviews__content pt-3 pb-3">
-          <div class="shop-reviews__content__left mr-3 pb-3 col-1">
-            <div class="shop-reviews__content__left__avatar">
-              <a href="#"><img alt="アバター" class="review-avatar my-1" src="https://placehold.jp/300x300.png"></a>
-            </div>
-            <div class="shop-reviews__content__left__user-name text-center">
-              <a class="text-dark" href="#">taro</a>
-            </div>
-          </div>
-          <div class="shop-reviews__content__main col-9">
-            <div class="shop-reviews__content__main__text mr-3 pt-3">
-              何度か訪れていますが、やはり雰囲気が落ち着きます
-            </div>
-            <div class="shop-reviews__content__main__star">
-              2020/11/12
-              <img src="#"><img src="#"><img src="#"><img src="#">
-              <img src="#"></div>
-            <div class="shop-reviews__content__delete col-2">
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
 
 
 
