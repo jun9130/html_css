@@ -30,6 +30,12 @@
       height: 300px;
     }
 
+    .top-contents {
+      justify-content: space-between;
+      flex-wrap: wrap;
+      color: black;
+    }
+
     .top-contents__shop {
       position: relative;
     }
@@ -42,9 +48,22 @@
       top: 48px;
       background-color: green;
       color: white;
+      border-radius: 2rem;
       padding: 0.65rem 0.65rem;
       min-width: 5rem;
       text-align: center;
+    }
+
+    .top-contents__shop-name {
+      color: black;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .top-contents__shop-average {
+      color: red;
+      font-size: 1.2rem;
     }
   </style>
 </head>
@@ -55,25 +74,182 @@
       <div class="top-title">
         <h3 class="font-weight-bold">新着順</h3>
       </div>
-      <div class="top-contents row">
-        <div class="top-contents__shop py-5 font-weight-bold">
-          <a class="link" href="#">
-            <div class="top-contents__shop-access font-weight-bold">
-              渋谷駅
-            </div>
-            <div class="top-contents__shop-image">
-            </div>
-            <img class="shop-first-image mx-auto d-block"
-              src="https://placehold.jp/300x300.png">
-              <div class="top-contents__shop-name font-weight-bold">
-                koe' lobby
+      <div class="top-contents">
+        <div class="row">
+          <div class="top-contents__shop font-weight-bold py-5 col-4">
+            <a class="link" href="#">
+              <div class="top-contents__shop-access font-weight-bold">
+                秋葉原
               </div>
-          </a>
+              <div class="top-contents__shop-image">
+                <img class="shop-first-image mx-auto d-block" src="https://placehold.jp/300x300.png" alt="Responsive image">
+              </div>
+              <div class="top-contents__shop-name font-weight-bold">
+                スターバックスコーヒー アトレ秋葉原1店
+              </div>
+              <div class="top-contents__shop-average d-flex">
+                <div class="top-contents__shop-average-star">
+                  <img src="aa">
+                  <img src="aa">
+                  <img src="aa">
+                  <img src="aa">
+                  <img src="aa">
+                </div>
+                <div class="top-contents__shop-average-rate font-weight-bold pl-2 ">
+                  5.0
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="top-contents__shop font-weight-bold py-5 col-4">
+            <a class="link" href="#">
+              <div class="top-contents__shop-access font-weight-bold">
+                秋葉原
+              </div>
+              <div class="top-contents__shop-image">
+                <img class="shop-first-image mx-auto d-block" src="https://placehold.jp/300x300.png" alt="Responsive image">
+              </div>
+              <div class="top-contents__shop-name font-weight-bold">
+                スターバックスコーヒー アトレ秋葉原1店
+              </div>
+              <div class="top-contents__shop-average d-flex">
+                <div class="top-contents__shop-average-star">
+                  <img src="aa">
+                  <img src="aa">
+                  <img src="aa">
+                  <img src="aa">
+                  <img src="aa">
+                </div>
+                <div class="top-contents__shop-average-rate font-weight-bold pl-2 ">
+                  5.0
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="top-contents__shop font-weight-bold py-5 col-4">
+            <a class="link" href="#">
+              <div class="top-contents__shop-access font-weight-bold">
+                秋葉原
+              </div>
+              <div class="top-contents__shop-image">
+                <img class="shop-first-image mx-auto d-block" src="https://placehold.jp/300x300.png" alt="Responsive image">
+              </div>
+              <div class="top-contents__shop-name font-weight-bold">
+                スターバックスコーヒー アトレ秋葉原1店
+              </div>
+              <div class="top-contents__shop-average d-flex">
+                <div class="top-contents__shop-average-star">
+                  <img src="aa">
+                  <img src="aa">
+                  <img src="aa">
+                  <img src="aa">
+                  <img src="aa">
+                </div>
+                <div class="top-contents__shop-average-rate font-weight-bold pl-2 ">
+                  5.0
+                </div>
+              </div>
+            </a>
+          </div>
+          
+          
+        </div> <!-- row -->
+      </div> <!-- top-contents -->
 
-        </div>
+    </div><!-- top-group -->
+  </div><!-- top container -->
+
+  <div class="top container my-5">
+    <div class="top-group mb-5 p-5">
+      <div class="top-title">
+        <h3 class="font-weight-bold">レスポンシブ</h3>
       </div>
-    </div>
-  </div>
+
+
+      <div class="top-contents">
+        <div class="row">
+          <div class="top-contents__shop font-weight-bold py-5 col-4">
+            <a class="link" href="#">
+              <div class="top-contents__shop-access font-weight-bold">
+                秋葉原
+              </div>
+              <div class="top-contents__shop-image">
+                <img class="img-fluid mx-auto d-block" src="https://placehold.jp/300x300.png" alt="Responsive image">
+              </div>
+              <div class="top-contents__shop-name font-weight-bold">
+                スターバックスコーヒー アトレ秋葉原1店
+              </div>
+              <div class="top-contents__shop-average d-flex">
+                <div class="top-contents__shop-average-star">
+                  <img src="aa">
+                  <img src="aa">
+                  <img src="aa">
+                  <img src="aa">
+                  <img src="aa">
+                </div>
+                <div class="top-contents__shop-average-rate font-weight-bold pl-2 ">
+                  5.0
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="top-contents__shop font-weight-bold py-5 col-4">
+            <a class="link" href="#">
+              <div class="top-contents__shop-access font-weight-bold">
+                秋葉原
+              </div>
+              <div class="top-contents__shop-image">
+                <img class="img-fluid mx-auto d-block" src="https://placehold.jp/300x300.png" alt="Responsive image">
+              </div>
+              <div class="top-contents__shop-name font-weight-bold">
+                スターバックスコーヒー アトレ秋葉原1店
+              </div>
+              <div class="top-contents__shop-average d-flex">
+                <div class="top-contents__shop-average-star">
+                  <img src="aa">
+                  <img src="aa">
+                  <img src="aa">
+                  <img src="aa">
+                  <img src="aa">
+                </div>
+                <div class="top-contents__shop-average-rate font-weight-bold pl-2 ">
+                  5.0
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="top-contents__shop font-weight-bold py-5 col-4">
+            <a class="link" href="#">
+              <div class="top-contents__shop-access font-weight-bold">
+                秋葉原
+              </div>
+              <div class="top-contents__shop-image">
+                <img class="img-fluid mx-auto d-block" src="https://placehold.jp/300x300.png" alt="Responsive image">
+              </div>
+              <div class="top-contents__shop-name font-weight-bold">
+                スターバックスコーヒー アトレ秋葉原1店
+              </div>
+              <div class="top-contents__shop-average d-flex">
+                <div class="top-contents__shop-average-star">
+                  <img src="aa">
+                  <img src="aa">
+                  <img src="aa">
+                  <img src="aa">
+                  <img src="aa">
+                </div>
+                <div class="top-contents__shop-average-rate font-weight-bold pl-2 ">
+                  5.0
+                </div>
+              </div>
+            </a>
+          </div>
+          
+          
+        </div> <!-- row -->
+      </div> <!-- top-contents -->
+
+    </div><!-- top-group -->
+  </div><!-- top container -->
 
 
 
