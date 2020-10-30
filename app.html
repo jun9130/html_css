@@ -65,6 +65,68 @@
       color: red;
       font-size: 1.2rem;
     }
+
+    .box1 {
+      background-color: red;
+    }
+
+    @media(max-width: 1200px){
+      img.shop-first-image {
+        width: 258px;
+        height: 258px;
+      }
+      .box1 {
+        background-color: blue;
+      }
+      .box1:before {
+        font-size:0.8rem;
+        content: "xl";
+      }
+    }
+
+    @media(max-width: 992px){
+      img.shop-first-image {
+        width: 258px;
+        height: 258px;
+      }
+      .box1 {
+        background-color: pink;
+      }
+      .box1:before {
+        font-size:0.8rem;
+        content: "lg";
+      }
+    }
+
+    @media(max-width: 768px){
+      img.shop-first-image {
+        width: 258px;
+        height: 258px;
+      }
+      .box1 {
+        background-color: yellow;
+      }
+      .box1:before {
+        font-size:0.8rem;
+        content: "md";
+      }
+    }
+
+    @media(max-width: 576px){
+      img.shop-first-image {
+        width: 258px;
+        height: 258px;
+      }
+      .box1 {
+        background-color: green;
+      }
+      .box1:before {
+        font-size:0.8rem;
+        content: "sm";
+      }
+    }
+
+
   </style>
 </head>
 
@@ -76,13 +138,14 @@
       </div>
       <div class="top-contents">
         <div class="row">
-          <div class="top-contents__shop font-weight-bold py-5 col-4">
+          <div class="top-contents__shop font-weight-bold py-5 col-12 col-md-6 col-lg-4">
             <a class="link" href="#">
               <div class="top-contents__shop-access font-weight-bold">
                 秋葉原
               </div>
               <div class="top-contents__shop-image">
-                <img class="shop-first-image mx-auto d-block" src="https://placehold.jp/300x300.png" alt="Responsive image">
+                <img class="shop-first-image mx-auto d-block" src="https://placehold.jp/300x300.png"
+                  alt="Responsive image">
               </div>
               <div class="top-contents__shop-name font-weight-bold">
                 スターバックスコーヒー アトレ秋葉原1店
@@ -101,13 +164,14 @@
               </div>
             </a>
           </div>
-          <div class="top-contents__shop font-weight-bold py-5 col-4">
+          <div class="top-contents__shop font-weight-bold py-5 col-12 col-md-6 col-lg-4">
             <a class="link" href="#">
               <div class="top-contents__shop-access font-weight-bold">
                 秋葉原
               </div>
               <div class="top-contents__shop-image">
-                <img class="shop-first-image mx-auto d-block" src="https://placehold.jp/300x300.png" alt="Responsive image">
+                <img class="shop-first-image mx-auto d-block" src="https://placehold.jp/300x300.png"
+                  alt="Responsive image">
               </div>
               <div class="top-contents__shop-name font-weight-bold">
                 スターバックスコーヒー アトレ秋葉原1店
@@ -126,13 +190,14 @@
               </div>
             </a>
           </div>
-          <div class="top-contents__shop font-weight-bold py-5 col-4">
+          <div class="top-contents__shop font-weight-bold py-5 col-12 col-md-6 col-lg-4">
             <a class="link" href="#">
               <div class="top-contents__shop-access font-weight-bold">
                 秋葉原
               </div>
               <div class="top-contents__shop-image">
-                <img class="shop-first-image mx-auto d-block" src="https://placehold.jp/300x300.png" alt="Responsive image">
+                <img class="shop-first-image mx-auto d-block" src="https://placehold.jp/300x300.png"
+                  alt="Responsive image">
               </div>
               <div class="top-contents__shop-name font-weight-bold">
                 スターバックスコーヒー アトレ秋葉原1店
@@ -151,15 +216,27 @@
               </div>
             </a>
           </div>
-          
-          
+
+
         </div> <!-- row -->
       </div> <!-- top-contents -->
 
     </div><!-- top-group -->
   </div><!-- top container -->
 
-  <div class="top container my-5">
+
+  <div class="container">
+    <div class="top-group mb-5 p-5">
+      <div class="box1">
+        box1
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- <div class="top container my-5">
     <div class="top-group mb-5 p-5">
       <div class="top-title">
         <h3 class="font-weight-bold">レスポンシブ</h3>
@@ -242,9 +319,9 @@
                 </div>
               </div>
             </a>
-          </div>
-          
-          
+          </div> -->
+
+
         </div> <!-- row -->
       </div> <!-- top-contents -->
 
