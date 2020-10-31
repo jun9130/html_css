@@ -36,14 +36,14 @@
       color: black;
     }
 
-    .top-contents__shop {
+    .top-contents__shop-image {
       position: relative;
     }
 
     .top-contents__shop-access {
       position: absolute;
-      /* relativeの要素を基準にする */
-      left: 12px;
+      /* relaiveの要素を基準にする */
+      left: 15px;
       /* 基準からみて左寄せ */
       top: 48px;
       background-color: green;
@@ -70,63 +70,153 @@
       background-color: red;
     }
 
-    @media(max-width: 1200px){
-      img.shop-first-image {
-        width: 258px;
-        height: 258px;
-      }
-      .box1 {
-        background-color: blue;
-      }
-      .box1:before {
-        font-size:0.8rem;
-        content: "xl";
-      }
-    }
 
-    @media(max-width: 992px){
+    /* @media(min-width: 576px) {
       img.shop-first-image {
-        width: 258px;
-        height: 258px;
+        width: 250px;
+        height: 250px;
       }
-      .box1 {
-        background-color: pink;
-      }
-      .box1:before {
-        font-size:0.8rem;
-        content: "lg";
-      }
-    }
 
-    @media(max-width: 768px){
-      img.shop-first-image {
-        width: 258px;
-        height: 258px;
-      }
-      .box1 {
-        background-color: yellow;
-      }
-      .box1:before {
-        font-size:0.8rem;
-        content: "md";
-      }
-    }
-
-    @media(max-width: 576px){
-      img.shop-first-image {
-        width: 258px;
-        height: 258px;
-      }
       .box1 {
         background-color: green;
       }
+
       .box1:before {
-        font-size:0.8rem;
+        font-size: 0.8rem;
         content: "sm";
       }
     }
 
+    @media(min-width: 768px) {
+      img.shop-first-image {
+        width: 300px;
+        height: 300px;
+      }
 
+      .top-contents__shop-name {
+        text-align: center;
+      }
+
+      .top-contents__shop-average {
+        display: flex;
+        justify-content: center;
+      }
+     
+
+      .box1 {
+        background-color: yellow;
+      }
+
+      .box1:before {
+        font-size: 0.8rem;
+        content: "md";
+      }
+    }
+
+    @media(min-width: 992px) {
+      img.shop-first-image {
+        width: 258px;
+        height: 258px;
+      }
+
+      .box1 {
+        background-color: pink;
+      }
+
+      .box1:before {
+        font-size: 0.8rem;
+        content: "lg";
+      }
+    }
+     @media(min-width: 1200px) {
+      img.shop-first-image {
+        width: 300px;
+        height: 300px;
+      }
+
+      .box1 {
+        background-color: blue;
+      }
+
+      .box1:before {
+        font-size: 0.8rem;
+        content: "xl";
+      }
+    }  */
+
+    @media (max-width: 1200px) {
+      img.shop-first-image {
+        width: 258px;
+        height: 258px;
+      }
+
+      .box1 {
+        background-color: blue;
+      }
+
+      .box1:before {
+        font-size: 0.8rem;
+        content: "xl";
+      }
+    }
+
+    @media(max-width: 992px) {
+      img.shop-first-image {
+        width: 300px;
+        height: 300px;
+      }
+
+      .box1 {
+        background-color: pink;
+      }
+
+      .box1:before {
+        font-size: 0.8rem;
+        content: "lg";
+      }
+    } */
+
+    /* @media(max-width: 768px) {
+      img.shop-first-image {
+        width: 300px;
+        height: 300px;
+      }
+
+      .top-contents__shop-name {
+        text-align: center;
+      }
+
+      .top-contents__shop-average {
+        display: flex;
+        justify-content: center;
+      }
+     
+
+      .box1 {
+        background-color: yellow;
+      }
+
+      .box1:before {
+        font-size: 0.8rem;
+        content: "md";
+      }
+    } */
+
+    /* @media(max-width: 576px) {
+      img.shop-first-image {
+        width: 220px;
+        height: 220px;
+      }
+
+      .box1 {
+        background-color: green;
+      }
+
+      .box1:before {
+        font-size: 0.8rem;
+        content: "sm";
+      }
+    }
   </style>
 </head>
 
@@ -140,12 +230,12 @@
         <div class="row">
           <div class="top-contents__shop font-weight-bold py-5 col-12 col-md-6 col-lg-4">
             <a class="link" href="#">
-              <div class="top-contents__shop-access font-weight-bold">
-                秋葉原
-              </div>
               <div class="top-contents__shop-image">
                 <img class="shop-first-image mx-auto d-block" src="https://placehold.jp/300x300.png"
                   alt="Responsive image">
+              </div>
+              <div class="top-contents__shop-access font-weight-bold">
+                秋葉原
               </div>
               <div class="top-contents__shop-name font-weight-bold">
                 スターバックスコーヒー アトレ秋葉原1店
@@ -166,12 +256,12 @@
           </div>
           <div class="top-contents__shop font-weight-bold py-5 col-12 col-md-6 col-lg-4">
             <a class="link" href="#">
-              <div class="top-contents__shop-access font-weight-bold">
-                秋葉原
-              </div>
               <div class="top-contents__shop-image">
                 <img class="shop-first-image mx-auto d-block" src="https://placehold.jp/300x300.png"
                   alt="Responsive image">
+              </div>
+              <div class="top-contents__shop-access font-weight-bold">
+                秋葉原
               </div>
               <div class="top-contents__shop-name font-weight-bold">
                 スターバックスコーヒー アトレ秋葉原1店
@@ -192,12 +282,12 @@
           </div>
           <div class="top-contents__shop font-weight-bold py-5 col-12 col-md-6 col-lg-4">
             <a class="link" href="#">
-              <div class="top-contents__shop-access font-weight-bold">
-                秋葉原
-              </div>
               <div class="top-contents__shop-image">
                 <img class="shop-first-image mx-auto d-block" src="https://placehold.jp/300x300.png"
                   alt="Responsive image">
+              </div>
+              <div class="top-contents__shop-access font-weight-bold">
+                秋葉原
               </div>
               <div class="top-contents__shop-name font-weight-bold">
                 スターバックスコーヒー アトレ秋葉原1店
@@ -216,6 +306,9 @@
               </div>
             </a>
           </div>
+
+
+
 
 
         </div> <!-- row -->
@@ -226,7 +319,8 @@
 
 
   <div class="container">
-    <div class="top-group mb-5 p-5">
+    <div class="top-group mb-5 p-5
+    ">
       <div class="box1">
         box1
       </div>
@@ -322,10 +416,10 @@
           </div> -->
 
 
-        </div> <!-- row -->
-      </div> <!-- top-contents -->
+  </div> <!-- row -->
+  </div> <!-- top-contents -->
 
-    </div><!-- top-group -->
+  </div><!-- top-group -->
   </div><!-- top container -->
 
 
