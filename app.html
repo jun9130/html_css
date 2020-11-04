@@ -25,47 +25,58 @@
       /* 下線消す */
     }
 
-    img.shop-first-image {
-      width: 300px;
-      height: 300px;
+    .shop-data {
+      background-color: #fff;
     }
 
-    .top-contents {
-      justify-content: space-between;
-      flex-wrap: wrap;
-      color: black;
+    .shop-data__upper {
+      font-size: 1.5rem;
     }
 
-    .top-contents__shop-image {
-      position: relative;
-    }
-
-    .top-contents__shop-access {
-      position: absolute;
-      /* relaiveの要素を基準にする */
-      left: 15px;
-      /* 基準からみて左寄せ */
-      top: 48px;
-      background-color: green;
-      color: white;
-      border-radius: 2rem;
-      padding: 0.65rem 0.65rem;
-      min-width: 5rem;
-      text-align: center;
-    }
-
-    .top-contents__shop-name {
-      color: black;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      margin: 0 9px;
-    }
-
-    .top-contents__shop-average {
+    .shop-data__upper__average-rate {
       color: red;
-      font-size: 1.2rem;
-      margin: 0 9px;
+    }
+
+    .shop-data__upper__registered-person {
+      font-size: 1rem;
+    }
+
+    
+    /* .shop-data__table {
+      min-width: 500px;
+    } */
+
+    .shop-edit-button {
+      display: inline-block;
+      font-size: 1rem;
+      margin-left: 10px;
+      padding: 7px 20px;
+      border-radius: 30px;
+      background: green;
+      color: white;
+    }
+
+    .tag-name {
+      display: inline-block;
+      border-radius: 30px;
+      background: green;
+      color: #fff;
+      padding: 1px 9px;
+      font-size: 0.9rem;
+    }
+
+    .tag-name-button {
+      color: #fff;
+    }
+
+    .shop-review-button {
+      display: inline-block;
+      font-size: 0.8rem;
+      margin-left: 10px;
+      padding: 7px 20px;
+      border-radius: 30px;
+      background: green;
+      color: white;
     }
 
     .box1 {
@@ -147,9 +158,10 @@
     }  */
 
     @media (max-width: 1200px) {
-      img.shop-first-image {
-        width: 258px;
-        height: 258px;
+
+      img.mainImage {
+        width: 400px;
+        height: 330px;
       }
 
       .box1 {
@@ -163,10 +175,8 @@
     }
 
     @media(max-width: 992px) {
-      img.shop-first-image {
-        width: 300px;
-        height: 300px;
-      }
+
+
 
       .box1 {
         background-color: pink;
@@ -179,16 +189,8 @@
     }
 
     @media (max-width: 767px) and (min-width: 500px) {
-      .top-contents__shop-name {
-        text-align: center;
-      }
-      .top-contents__shop-average {
-        display: flex;
-        justify-content: center;
-      }
-      .top-contents__shop-access {
-      display: none;
-    }
+
+
       .box1 {
         background-color: yellow;
       }
@@ -200,18 +202,7 @@
     }
 
     @media(max-width: 375px) {
-      img.shop-first-image {
-        width: 220px;
-        height: 220px;
-      }
 
-      .top-contents__shop-name {
-        text-align: center;
-      }
-      .top-contents__shop-average {
-        display: flex;
-        justify-content: center;
-      }
       .box1 {
         background-color: green;
       }
@@ -225,101 +216,149 @@
 </head>
 
 <body>
-  <div class="top container my-5">
-    <div class="top-group mb-5 p-5">
-      <div class="top-title">
-        <h3 class="font-weight-bold">新着順</h3>
+  <div class="shop-data container my-5">
+    <div class="shop-data__upper pt-5 pb-3 pl-5">
+      <div class="shop-data__upper__name font-weight-bold">
+        <a class="shop-edit-button float-right mr-5" href="/shops/2/edit">編集</a>
+        gion</div>
+      <div class="shop-data__upper__average d-flex">
+        <div class="shop-data__upper__average-star">
+          <img src="/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png">
+          <img src="/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png">
+          <img src="/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png">
+          <img src="/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png">
+          <img src="/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png">
+        </div>
+        <div class="shop-data__upper__average-rate font-weight-bold pl-3">
+          --
+        </div>
       </div>
-      <div class="top-contents">
-        <div class="row">
-          <div class="top-contents__shop font-weight-bold py-5 col-12 col-md-6 col-lg-4">
-            <a class="link" href="#">
-              <div class="top-contents__shop-image">
-                <img class="shop-first-image mx-auto d-block" src="https://placehold.jp/300x300.png"
-                  alt="Responsive image">
-              </div>
-              <div class="top-contents__shop-access font-weight-bold">
-                <span>秋葉原</span>
-              </div>
-              <div class="top-contents__shop-name font-weight-bold">
-                スターバックスコーヒー アトレ秋葉原1店
-              </div>
-              <div class="top-contents__shop-average d-flex">
-                <div class="top-contents__shop-average-star">
-                  <img src="aa">
-                  <img src="aa">
-                  <img src="aa">
-                  <img src="aa">
-                  <img src="aa">
-                </div>
-                <div class="top-contents__shop-average-rate font-weight-bold pl-2 ">
-                  5.0
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="top-contents__shop font-weight-bold py-5 col-12 col-md-6 col-lg-4">
-            <a class="link" href="#">
-              <div class="top-contents__shop-image">
-                <img class="shop-first-image mx-auto d-block" src="https://placehold.jp/300x300.png"
-                  alt="Responsive image">
-              </div>
-              <div class="top-contents__shop-access font-weight-bold">
-                秋葉原
-              </div>
-              <div class="top-contents__shop-name font-weight-bold">
-                スターバックスコーヒー アトレ秋葉原1店
-              </div>
-              <div class="top-contents__shop-average d-flex">
-                <div class="top-contents__shop-average-star">
-                  <img src="aa">
-                  <img src="aa">
-                  <img src="aa">
-                  <img src="aa">
-                  <img src="aa">
-                </div>
-                <div class="top-contents__shop-average-rate font-weight-bold pl-2 ">
-                  5.0
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="top-contents__shop font-weight-bold py-5 col-12 col-md-6 col-lg-4">
-            <a class="link" href="#">
-              <div class="top-contents__shop-image">
-                <img class="shop-first-image mx-auto d-block" src="https://placehold.jp/300x300.png"
-                  alt="Responsive image">
-              </div>
-              <div class="top-contents__shop-access font-weight-bold">
-                秋葉原
-              </div>
-              <div class="top-contents__shop-name font-weight-bold">
-                スターバックスコーヒー アトレ秋葉原1店
-              </div>
-              <div class="top-contents__shop-average d-flex">
-                <div class="top-contents__shop-average-star">
-                  <img src="aa">
-                  <img src="aa">
-                  <img src="aa">
-                  <img src="aa">
-                  <img src="aa">
-                </div>
-                <div class="top-contents__shop-average-rate font-weight-bold pl-2 ">
-                  5.0
-                </div>
-              </div>
-            </a>
-          </div>
+      <div class="shop-data__upper__registered-person">
+        登録者:
+        <a class="text-dark" href="#">テストユーザー</a>
+      </div>
+    </div>
+    <div class="shop-data-content d-flex flex-lg-row flex-column mb-5 pl-5">
+      <div class="row">
+        <div class="shop-photo col-lg-6 col-9 mx-auto">
+          <img alt="メイン画像" class="mainImage" src="https://placehold.jp/500x330.png" width="450" height="330">
+        </div>
+        <div class="shop-data__table col-lg-6 col-9 mx-auto">
+          <table class="table ml-3">
+            <tbody>
+              <tr>
+                <th>
+                  最寄駅
+                </th>
+                <td>
+                  阿佐ケ谷駅
+                </td>
+
+              </tr>
+              <tr>
+                <th>
+                  住所
+                </th>
+                <td>
+                  東京都杉並区阿佐谷北１丁目３−３
+                </td>
+
+              </tr>
+              <tr>
+                <th>
+                  営業時間
+                </th>
+                <td>
+                  8:30~2:00
+                </td>
+
+              </tr>
+              <tr>
+                <th>
+                  定休日
+                </th>
+                <td>
+                  不定休
+                </td>
+
+              </tr>
+              <tr>
+                <th>
+                  席数
+                </th>
+                <td>
+                  22席
+                </td>
+
+              </tr>
+              <tr>
+                <th>
+                  タグ
+                </th>
+                <td>
+                  <div class="tag-name">
+                    <a class="tag-name-button" href="/tags/3/shops">駅から徒歩5分</a>
+                  </div>
+                  <div class="tag-name">
+                    <a class="tag-name-button" href="/tags/7/shops">喫煙可</a>
+                  </div>
+                  <div class="tag-name">
+                    <a class="tag-name-button" href="/tags/9/shops">純喫茶</a>
+                  </div>
+                </td>
+
+              </tr>
+              <tr>
+                <th>
+                  お気に入り
+                </th>
+                <td>
+                  <a class="like-button-yet" data-remote="true" rel="nofollow" data-method="post"
+                    href="/shops/2/likes"><i class="fas fa-heart"></i>
+                    0
+                  </a>
+                </td>
+
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+    </div>
 
 
 
 
 
-        </div> <!-- row -->
-      </div> <!-- top-contents -->
 
-    </div><!-- top-group -->
-  </div><!-- top container -->
+
+
+
+
+    <div class="shop-other-photos pl-5">
+      <div class="shop-other-photos__header">
+        <div class="shop-post-photos__header__title font-weight-bold mb-3">
+          写真
+        </div>
+      </div>
+      <div class="shop-post-photos__content">
+      </div>
+    </div>
+    <div class="shop-review my-5 pl-5">
+      <div class="shop-review__title font-weight-bold mb-3">
+        レビュー一覧
+        <a class="shop-review-button float-right" href="#">レビューを書く</a>
+      </div>
+      <div class="shop-review__wrapper pb-5">
+        レビューはまだありません。
+      </div>
+    </div>
+  </div>
+
+
+
 
 
   <div class="container">
@@ -333,97 +372,6 @@
 
 
 
-  <!-- <div class="top container my-5">
-    <div class="top-group mb-5 p-5">
-      <div class="top-title">
-        <h3 class="font-weight-bold">レスポンシブ</h3>
-      </div>
-
-
-      <div class="top-contents">
-        <div class="row">
-          <div class="top-contents__shop font-weight-bold py-5 col-4">
-            <a class="link" href="#">
-              <div class="top-contents__shop-access font-weight-bold">
-                秋葉原
-              </div>
-              <div class="top-contents__shop-image">
-                <img class="img-fluid mx-auto d-block" src="https://placehold.jp/300x300.png" alt="Responsive image">
-              </div>
-              <div class="top-contents__shop-name font-weight-bold">
-                スターバックスコーヒー アトレ秋葉原1店
-              </div>
-              <div class="top-contents__shop-average d-flex">
-                <div class="top-contents__shop-average-star">
-                  <img src="aa">
-                  <img src="aa">
-                  <img src="aa">
-                  <img src="aa">
-                  <img src="aa">
-                </div>
-                <div class="top-contents__shop-average-rate font-weight-bold pl-2 ">
-                  5.0
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="top-contents__shop font-weight-bold py-5 col-4">
-            <a class="link" href="#">
-              <div class="top-contents__shop-access font-weight-bold">
-                秋葉原
-              </div>
-              <div class="top-contents__shop-image">
-                <img class="img-fluid mx-auto d-block" src="https://placehold.jp/300x300.png" alt="Responsive image">
-              </div>
-              <div class="top-contents__shop-name font-weight-bold">
-                スターバックスコーヒー アトレ秋葉原1店
-              </div>
-              <div class="top-contents__shop-average d-flex">
-                <div class="top-contents__shop-average-star">
-                  <img src="aa">
-                  <img src="aa">
-                  <img src="aa">
-                  <img src="aa">
-                  <img src="aa">
-                </div>
-                <div class="top-contents__shop-average-rate font-weight-bold pl-2 ">
-                  5.0
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="top-contents__shop font-weight-bold py-5 col-4">
-            <a class="link" href="#">
-              <div class="top-contents__shop-access font-weight-bold">
-                秋葉原
-              </div>
-              <div class="top-contents__shop-image">
-                <img class="img-fluid mx-auto d-block" src="https://placehold.jp/300x300.png" alt="Responsive image">
-              </div>
-              <div class="top-contents__shop-name font-weight-bold">
-                スターバックスコーヒー アトレ秋葉原1店
-              </div>
-              <div class="top-contents__shop-average d-flex">
-                <div class="top-contents__shop-average-star">
-                  <img src="aa">
-                  <img src="aa">
-                  <img src="aa">
-                  <img src="aa">
-                  <img src="aa">
-                </div>
-                <div class="top-contents__shop-average-rate font-weight-bold pl-2 ">
-                  5.0
-                </div>
-              </div>
-            </a>
-          </div> -->
-
-
-  </div> <!-- row -->
-  </div> <!-- top-contents -->
-
-  </div><!-- top-group -->
-  </div><!-- top container -->
 
 
 
