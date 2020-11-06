@@ -1,147 +1,205 @@
-/* .box1 {
-  background-color: aqua;
-}
 
-@media (max-width: 1200px) {
-  .box1 {
-    background-color: blue;
-  }
-  .box1:before {
-    font-size: 0.8rem;
-    content: "XL";
-  }
-}
 
-@media (max-width: 992px) {
-  .box1 {
-    background-color: yellow;
-  }
-  .box1:before {
-    font-size: 0.8rem;
-    content: "L";
-  }
-}
-
-@media (max-width: 768px) {
-  .box1 {
-    background-color: pink;
-  }
-  .box1:before {
-    font-size: 0.8rem;
-    content: "M";
-  }
-}
-
-@media (max-width: 576px) {
-  .box1 {
-    background-color: green;
-  }
-  .box1:before {
-    font-size: 0.8rem;
-    content: "S";
-  }
+/* a,
+a:hover {
+  color: #fff;
 } */
 
-/* index2学習用 */
-/* div {
-  background-color: green;
+a:hover {
+  opacity: 0.5;
+  /* リンクの透明度 */
+  text-decoration: none;
+  /* 下線消す */
 }
 
-@media (min-width: 600px) {
-  div {
-    background-color: pink;
-  }
-} */
-
-
-
-/* アプリ用 */
-.home {
-  background-color: #f5f5f5;
-}
-
-/* トップ画像 */
-.top-image {
-  height: 31rem;
-  width: 100%;
-  background-color: yellow;
-}
-
-/* メイン */
-.top {
-  padding: 50px 30px;
-}
-
-
-/* 個別大枠 */
-.top-group {
+.shop-data {
   background-color: #fff;
-  
 }
 
-/* タグ関係 */
-.tag-content {
+.shop-data__upper {
+  font-size: 1.5rem;
+}
 
+.shop-data__upper__average-rate {
+  color: red;
 }
-.tag-list {
-  
-}
-ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-}
-.tag-item{
-  background-color: green;
-  border-radius: 2rem;
-}
-.tag-item-link {
+
+.shop-data__upper__registered-person {
   font-size: 1rem;
 }
 
-
-/* ショップ関係 */
-.top-contents__shop {
-  padding: 32px 12px;
-  position: relative; /* 帯の表示位置の基準とする */
+.shop-data-other-image {
+  width: 500px;
+  height: 330px;
+  background-color: red;
+  flex-wrap:wrap
 }
 
-.top-contents__shop p {
+
+
+.shop-edit-button {
+  display: inline-block;
+  font-size: 1rem;
+  margin-left: 10px;
+  padding: 7px 20px;
+  border-radius: 30px;
+  background: green;
+  color: white;
+}
+
+.tag-name {
+  display: inline-block;
+  border-radius: 30px;
+  background: green;
   color: #fff;
-  text-align: center;
-  width: 100%;         /* 画像の幅に合わせるため */
-  padding: 10px 0;
-  position: absolute;  /* relativeの要素を基準にする */
-  left: 0;             /* 基準からみて左寄せ */
-  bottom: 0;           /* 基準からみて下寄せ */
-  background: rgba(0,0,0,0.5);  /* 半透明の背景。 */
+  padding: 1px 9px;
+  font-size: 0.9rem;
 }
 
-.top-contents__shop img {
-  width: 100%;
-}
-
-.onimg {
-  width: 300px;        /* 画像の横幅（自由に指定） */
-  position: relative;  /* 帯の表示位置の基準とする */
-}
-
-.onimg img {
-  width: 100%;
-}
-
-.onimg p {
+.tag-name-button {
   color: #fff;
-  text-align: center;
-  width: 100%;         /* 画像の幅に合わせるため */
-  padding: 10px 0;
-  position: absolute;  /* relativeの要素を基準にする */
-  left: 0;             /* 基準からみて左寄せ */
-  bottom: 0;           /* 基準からみて下寄せ */
-  background: rgba(0,0,0,0.5);  /* 半透明の背景。 */
+}
+
+.shop-review-button {
+  display: inline-block;
+  font-size: 0.8rem;
+  margin-left: 10px;
+  padding: 7px 20px;
+  border-radius: 30px;
+  background: green;
+  color: white;
+}
+
+.box1 {
+  background-color: red;
 }
 
 
-.shop-images {
-  background-color: green;
+/* @media(min-width: 576px) {
+  img.shop-first-image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .box1 {
+    background-color: green;
+  }
+
+  .box1:before {
+    font-size: 0.8rem;
+    content: "sm";
+  }
+}
+
+@media(min-width: 768px) {
+  img.shop-first-image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .top-contents__shop-name {
+    text-align: center;
+  }
+
+  .top-contents__shop-average {
+    display: flex;
+    justify-content: center;
+  }
+ 
+
+  .box1 {
+    background-color: yellow;
+  }
+
+  .box1:before {
+    font-size: 0.8rem;
+    content: "md";
+  }
+}
+
+@media(min-width: 992px) {
+  img.shop-first-image {
+    width: 258px;
+    height: 258px;
+  }
+
+  .box1 {
+    background-color: pink;
+  }
+
+  .box1:before {
+    font-size: 0.8rem;
+    content: "lg";
+  }
+}
+ @media(min-width: 1200px) {
+  img.shop-first-image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .box1 {
+    background-color: blue;
+  }
+
+  .box1:before {
+    font-size: 0.8rem;
+    content: "xl";
+  }
+}  */
+
+@media (max-width: 1200px) {
+
+  .box1 {
+    background-color: blue;
+  }
+
+  .box1:before {
+    font-size: 0.8rem;
+    content: "xl";
+  }
+}
+
+@media(max-width: 992px) {
+
+  img.mainImage {
+
+    width: 500px;
+    height: 330px;
+  }
+
+
+  .box1 {
+    background-color: pink;
+  }
+
+  .box1:before {
+    font-size: 0.8rem;
+    content: "lg";
+  }
+}
+
+@media (max-width: 767px) and (min-width: 500px) {
+
+
+  .box1 {
+    background-color: yellow;
+  }
+
+  .box1:before {
+    font-size: 0.8rem;
+    content: "aaaaaa";
+  }
+}
+
+@media(max-width: 375px) {
+
+  .box1 {
+    background-color: green;
+  }
+
+  .box1:before {
+    font-size: 0.8rem;
+    content: "sm";
+  }
 }
