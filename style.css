@@ -1,82 +1,47 @@
-
-
-/* a,
-a:hover {
-  color: #fff;
-} */
-
-a:hover {
-  opacity: 0.5;
-  /* リンクの透明度 */
-  text-decoration: none;
-  /* 下線消す */
-}
-
-.shop-data, .top-group {
-  background-color: #fff;
-}
-
-.shop-data__upper {
-  font-size: 1.5rem;
-}
-
-.shop-data__upper__average-rate {
-  color: red;
-}
-
-.shop-data__upper__registered-person {
-  font-size: 1rem;
-}
-
-img.mainImage {
-  width: 550px;
-  height: 330px;
-}
-
-.table {
-  max-width: 500px;
-  width: 100%;
-}
-
-
-
-.shop-edit-button {
-  display: inline-block;
-  font-size: 1rem;
-  margin-left: 10px;
-  padding: 7px 20px;
-  border-radius: 30px;
-  background: green;
-  color: white;
-}
-
-.tag-name {
-  display: inline-block;
-  border-radius: 30px;
-  background: green;
-  color: #fff;
-  padding: 1px 9px;
-  font-size: 0.9rem;
-}
-
-.tag-name-button {
-  color: #fff;
-}
-
-.shop-review-button {
-  display: inline-block;
-  font-size: 0.8rem;
-  margin-left: 10px;
-  padding: 7px 20px;
-  border-radius: 30px;
-  background: green;
-  color: white;
-}
-
 .box1 {
   background-color: red;
 }
 
+.mypage {
+  background-color: #fff;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.tabs li {
+  
+}
+
+.tabs li a {
+  display: block;
+  padding: .5rem 1rem;
+  background-color: #fff;
+  border-radius: .25rem;
+  transition: 0.3s;
+}
+
+.tabs li a:not(.active):hover {
+  opacity: 0.7;
+}
+
+.tabs li a.active {
+  background-color: green;
+  color: #fff;
+}
+
+.contents li {
+  background-color: #fff;
+  padding: 20px;
+  display: none;
+}
+
+.contents li.active {
+  display: block;
+}
 
 /* @media(min-width: 576px) {
   img.shop-first-image {
@@ -162,43 +127,11 @@ img.mainImage {
     content: "xl";
   }
 
-  img.mainImage {
-    width: 400px;
-    height: 330px;
-  }
-  img.otherImage {
-    width: 165px;
-    height: 165px;
-  }
-
-.table {
-  max-width: 500px;
-  width: 100%;
-}
-
 }
 
 @media(max-width: 992px) {
 
-  
-
-  
-  img.mainImage {
-
-    width: 500px;
-    height: 330px;
-    
-  }
-
-  img.otherImage {
-    width: 100px;
-    height: 100px;
-  }
-
-  
-
-
-  .box1 {
+    .box1 {
     background-color: pink;
   }
 
@@ -209,20 +142,6 @@ img.mainImage {
 }
 
 @media (max-width: 767px) and (min-width: 500px) {
-
-  img.mainImage {
-
-    width: 400px;
-    height: 300px;
-    
-  }
-
-
-  img.otherImage {
-    width: 75px;
-    height: 75px;
-  }
-
 
   .box1 {
     background-color: yellow;
@@ -236,15 +155,6 @@ img.mainImage {
 
 @media(max-width: 375px) {
 
-
-  img.mainImage {
-
-    width: 300px;
-    height: 300px;
-    
-  }
-
-
   .box1 {
     background-color: green;
   }
@@ -252,10 +162,5 @@ img.mainImage {
   .box1:before {
     font-size: 0.8rem;
     content: "sm";
-  }
-
-  img.otherImage {
-    width: 50px;
-    height: 50px;
   }
 }
