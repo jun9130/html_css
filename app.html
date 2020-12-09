@@ -28,9 +28,9 @@
             <li><a href="">レビュー</a></li>
           </ul>
           <ul class="contents">
-            <li class="active">コンテンツ1</li>
-            <li>コンテンツ2</li>
-            <li>コンテンツ3</li>
+            <li class="active"><img src="https://placehold.jp/3d4070/ffffff/300x300.png?text=%EF%BC%91" alt=""></li>
+            <li><img src="https://placehold.jp/3d4070/ffffff/300x300.png?text=2" alt=""></li>
+            <li><img src="https://placehold.jp/3d4070/ffffff/300x300.png?text=3" alt=""></li>
           </ul>
         
       </div>
@@ -53,16 +53,31 @@
       box1
     </div>
   </div>
+    <script>
+      const tabs = document.querySelectorAll(".tabs li a");
+const contents = document.querySelectorAll(".contents li");
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-    crossorigin="anonymous"></script>
+console.log(tabs);
+console.log(contents);
+
+for (let i = 0; i < tabs.length; i++) {
+  tabs[i].addEventListener('click', function(e){
+    e.preventDefault();
+  for(let j = 0; j < tabs.length; j++) {
+    tabs[j].classList.remove("active");
+  } 
+  for(let j = 0; j < contents.length; j++) {
+    contents[j].classList.remove("active");
+  } 
+    this.classList.add('active')
+    contents[i].classList.add('active');
+  }); 
+}
+
+
+
+
+    </script>
 </body>
 
 </html>
