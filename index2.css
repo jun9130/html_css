@@ -1,5 +1,33 @@
 @charset "utf-8";
 
-ul, ol {
-  list-style: none;
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.layouts {
+  display: flex;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #333;
+}
+
+.box:nth-of-type(2) {
+  background-color: #aaa;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+    color: red;
+  }
+  .layouts {
+    display: block;
+  }
+  .pcview {
+    display: none;
+  }
 }
