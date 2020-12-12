@@ -1,33 +1,45 @@
 @charset "utf-8";
 
-h1 {
-  font-size: 40px;
-  font-weight: bold;
+main {
+  max-width: 1000px;
+  width: 100%;
+  background-color: #eee;
+  border-radius: 5px;
+  margin: 50px auto;
+  padding: 20px;
 }
 
-.layouts {
-  display: flex;
+main h1 {
+  font-size: 50px;
 }
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: #333;
+@media screen and (max-width: 640px) {
+  main h1 {
+    color: green;
+  }
+  
 }
 
-.box:nth-of-type(2) {
-  background-color: #aaa;
+
+@media screen and (min-width: 641px) and (max-width:768px) {
+  main h1 {
+    color: red;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  h1 {
-    font-size: 20px;
-    color: red;
+  main {
+    padding: 10px;
   }
-  .layouts {
-    display: block;
+
+  main h1 {
+    font-size: 40px;
   }
-  .pcview {
-    display: none;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+  main h1 {
+    font-size: 30px;
+    color:blue;
   }
 }
