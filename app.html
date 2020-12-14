@@ -12,36 +12,27 @@
     body {
       background-color: #f5f5f5;
     }
+    ul, li {
+      list-style: none;
+    }
+    .box1 {
+    background-color: red;
+    }
+
+    .mypage {
+    background-color: #fff;
+      }
+
   </style>
 </head>
 
 <body>
-  <div class="mypage container my-5">
-    <div class="my-page-content mb-5 p-5">
-      <div class="upper-mypage"></div>
-      <div class="lower-muypage">
-        <div class="row"></div>
-        <div class="tab-contents ">
-          <ul class="tabs">
-            <li><a href="" class="active">登録したカフェ</a></li>
-            <li><a href="">お気に入り</a></li>
-            <li><a href="">レビュー</a></li>
-          </ul>
-          <ul class="contents">
-            <li class="active"><img src="https://placehold.jp/3d4070/ffffff/300x300.png?text=%EF%BC%91" alt=""></li>
-            <li><img src="https://placehold.jp/3d4070/ffffff/300x300.png?text=2" alt=""></li>
-            <li><img src="https://placehold.jp/3d4070/ffffff/300x300.png?text=3" alt=""></li>
-          </ul>
-        
-      </div>
-      </div>
-      </div>
-    
+  
+  
+  
 
-  </div>
-    
-
-
+       
+  
 
 
 
@@ -54,25 +45,12 @@
     </div>
   </div>
     <script>
-      const tabs = document.querySelectorAll(".tabs li a");
-const contents = document.querySelectorAll(".contents li");
 
-console.log(tabs);
-console.log(contents);
 
-for (let i = 0; i < tabs.length; i++) {
-  tabs[i].addEventListener('click', function(e){
-    e.preventDefault();
-  for(let j = 0; j < tabs.length; j++) {
-    tabs[j].classList.remove("active");
-  } 
-  for(let j = 0; j < contents.length; j++) {
-    contents[j].classList.remove("active");
-  } 
-    this.classList.add('active')
-    contents[i].classList.add('active');
-  }); 
-}
+
+
+
+
 
 
 
