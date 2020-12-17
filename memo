@@ -8,6 +8,14 @@
 インラインブロック要素
 - ブロック要素の振る舞いで横に並ぶ
 
+position: relative; 親
+position: absolute; 子
+position: relativeがない場合、bodyが基準
+
+position: fixed; 固定
+
+z-index 重なり順
+
 line-height
 
 ul ol違い
