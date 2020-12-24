@@ -8,6 +8,12 @@
 インラインブロック要素
 - ブロック要素の振る舞いで横に並ぶ
 
+Emmet
+兄弟要素→ +でつなぐ
+
+fz→font-size
+:→スペース
+
 position: relative; 親
 position: absolute; 子
 position: relativeがない場合、bodyが基準

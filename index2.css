@@ -1,18 +1,8 @@
-@charset "utf-8";
+body {
+  margin: 10px;
+  padding: 10px;
+  font-size: 0.5rem;
 
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-main {
-  max-width: 1000px;
   margin: 0 auto;
-  margin-top: 100px;
-  text-align: center;
+  padding: 10px 20px;
 }
-
-a {
-  text-decoration: none;
-  border-bottom: solid 2px orange;
-}
-
