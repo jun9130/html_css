@@ -4,6 +4,7 @@
 インライン要素
 - 高さ幅が指定できない
 - marginの上下が指定できない
+- 真ん中寄せ→text-align: center;
 
 インラインブロック要素
 - ブロック要素の振る舞いで横に並ぶ
@@ -13,6 +14,7 @@ Emmet
 
 fz→font-size
 :→スペース
+bdrs→border-radius
 
 position: relative; 親
 position: absolute; 子

@@ -1,8 +1,58 @@
-body {
-  margin: 10px;
-  padding: 10px;
-  font-size: 0.5rem;
+@charset "UTF-8";
 
-  margin: 0 auto;
-  padding: 10px 20px;
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  font-size: 20px;
+}
+
+a {
+  color: #333;
+}
+
+main {
+  max-width: 1000px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+
+}
+
+li:not(:first-of-type) {
+  margin-top: 50px;
+}
+
+p {
+  background-color: green;
+  color: #fff;
+  text-align: center; 
+  padding: 10px;
+}
+
+p img {
+  width: 200px;
+}
+
+p a,
+p span {
+  background-color: blue;
+  color: #fff;
+  width: 300px;
+  height: 40px;
+  display: inline-block;
+  margin-right: 5px;
+  text-align: center;
+  line-height: 40px; /*heightの高さ*/
 }
