@@ -35,7 +35,6 @@ li:not(:first-of-type) {
 }
 
 p {
-  background-color: green;
   color: #fff;
   text-align: center; 
   padding: 10px;
@@ -47,7 +46,7 @@ p img {
 
 p a,
 p span {
-  background-color: blue;
+  background-color: #333;
   color: #fff;
   width: 300px;
   height: 40px;
@@ -55,4 +54,11 @@ p span {
   margin-right: 5px;
   text-align: center;
   line-height: 40px; /*heightの高さ*/
+}
+
+.box {
+  width: 200px; /*幅を指定しないと幅100%*/
+  height: 200px;
+  background-color: yellow;
+  margin: 0 auto;
 }
