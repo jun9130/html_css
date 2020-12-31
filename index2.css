@@ -9,40 +9,4 @@ main {
   margin: 100px auto;
   padding: 20px;
   background-color: #eee;
-  border-radius: 5px;
-}
-
-h1 {
-  font-weight: bold;
-  font-size: 1.5rem;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-/* 追加部分のみ記載 */
-
-h2 {
-  font-weight: bold;
-  font-size: 1.2rem;
-  text-align: center;
-  padding: 10px 0;
-}
-
-.contents {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.content {
-  height: 250px;
-  width: 250px;
-  background-color: #fff;
-  margin: 15px;
-  
-}
-
-.article {
-  padding: 10px;
 }
