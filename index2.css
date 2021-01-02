@@ -1,12 +1,32 @@
 @charset "UTF-8"; /*文字化け防止*/
 
-.test {
-  width: 50%;  
+h1 {
+  font-size: 100px;
+}
+
+.layout {
+  display: flex;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #333;
+}
+
+.box:nth-of-type(2) {
+  background-color: #eee;
 }
 
 
-img {
-  width: 100%; /*親要素の何%*/
+/*768以下 iPad*/
+@media screen and (max-width: 768px) {
+  h1 {
+    color: red;
+    font-size: 20px;
+  }
+
+  .layout {
+    display: block;
+  }
 }
-
-
