@@ -20,13 +20,32 @@ h1 {
 
 
 /*768以下 iPad*/
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 640px) {
+  h1 {
+    color: green;
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
   h1 {
     color: red;
-    font-size: 20px;
+    font-size: 40px;
   }
+}
 
-  .layout {
-    display: block;
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  h1 {
+    color:  blue;
+    font-size: 30px;
   }
 }
