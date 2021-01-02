@@ -1,51 +1,62 @@
 @charset "UTF-8"; /*文字化け防止*/
 
-h1 {
-  font-size: 100px;
-}
-
-.layout {
-  display: flex;
-}
-
-.box {
-  width: 100px;
+.test {
   height: 100px;
-  background-color: #333;
+  background: red;
+}
+.test:before {
+  content: "PC";
+  font-size: 50px;
 }
 
-.box:nth-of-type(2) {
-  background-color: #eee;
-}
 
 
-/*768以下 iPad*/
 
-@media screen and (max-width: 640px) {
-  h1 {
-    color: green;
-    font-size: 40px;
+@media screen and (max-width: 576px) {
+  .test {
+    height: 100px;
+    background: blue;
+  }
+  .test:before {
+    content: "スマホ";
+    font-size: 50px;
   }
 }
 
-@media screen and (min-width: 641px) and (max-width: 768px) {
-  h1 {
-    color: red;
-    font-size: 40px;
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .test {
+    height: 100px;
+    background: green;
+  }
+  .test:before {
+    content: "ipad";
+    font-size: 50px;
   }
 }
 
 
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 40px;
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .test {
+    height: 100px;
+    background: yellow;
+  }
+  .test:before {
+    content: "lg";
+    font-size: 50px;
   }
 }
 
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  h1 {
-    color:  blue;
-    font-size: 30px;
+/*1200以下*/
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .test {
+    height: 100px;
+    background: pink;
+  }
+  .test:before {
+    content: "ipadpro";
+    font-size: 50px;
   }
 }
+
+
