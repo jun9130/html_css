@@ -1,62 +1,34 @@
 @charset "UTF-8"; /*文字化け防止*/
 
-.test {
-  height: 100px;
-  background: red;
-}
-.test:before {
-  content: "PC";
-  font-size: 50px;
-}
+main {
+  max-width: 1000px;
+  width: 100%;
 
-
-
-
-@media screen and (max-width: 576px) {
-  .test {
-    height: 100px;
-    background: blue;
-  }
-  .test:before {
-    content: "スマホ";
-    font-size: 50px;
-  }
+  padding: 20px;
+  margin: 50px auto;
+  background-color: #eee;
 }
 
-@media screen and (min-width: 577px) and (max-width: 768px) {
-  .test {
-    height: 100px;
-    background: green;
-  }
-  .test:before {
-    content: "ipad";
-    font-size: 50px;
-  }
+main h1 {
+  font-weight: bold;
+  font-size: 20px;
+  border-left: 1px solid #000;
+  padding-bottom: 5px;
 }
 
-
-@media screen and (min-width: 769px) and (max-width: 992px) {
-  .test {
-    height: 100px;
-    background: yellow;
-  }
-  .test:before {
-    content: "lg";
-    font-size: 50px;
-  }
+.relative {
+  width: 600px;
+  height: 400px;
+  background-color: #aaa;
+  margin-top: 30px;
+  position: relative;
 }
 
-
-/*1200以下*/
-@media screen and (min-width: 993px) and (max-width: 1200px) {
-  .test {
-    height: 100px;
-    background: pink;
-  }
-  .test:before {
-    content: "ipadpro";
-    font-size: 50px;
-  }
+.absolute {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
-
-
