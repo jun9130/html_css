@@ -1,25 +1,28 @@
-@charset "UTF-8"; /*文字化け防止*/
-
-main {
-  max-width: 1000px;
-  width: 100%;
-  padding: 20px;
-  margin: 50px auto;
+.top-group {
   background-color: #eee;
-  border-radius: 5px;
 }
 
-
-.test {
-  white-space: nowrap;
+img {
+  width: 100%;
 }
 
-.sp {
-  display: none;
+.shop-acces {
+  color: black;
+  position: absolute;
+  left: 1rem;
+  top: 3rem;
+  background-color: green;
+  border-radius: 2rem;
+  color: white;
+  padding: 0.65rem 0.65rem;
+  min-width: 5rem;
+  text-align: center;
 }
 
-@media screen and (max-width: 576px) {
-  .sp {
-    display: block;
-  }
-}
+@media screen and (max-width: 576px) {}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {}
