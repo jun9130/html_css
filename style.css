@@ -138,10 +138,64 @@
   text-align: center;
 }
 
-@media screen and (max-width: 576px) {}
 
-@media screen and (min-width: 577px) and (max-width: 768px) {}
 
-@media screen and (min-width: 769px) and (max-width: 992px) {}
+.sample {
+  height: 100px;
+  width: 100%;
+  background-color: orange;
+  font-size: 2rem;
+}
+.sample::before {
+  content: "デフォルト";
+}
 
-@media screen and (min-width: 993px) and (max-width: 1200px) {}
+@media screen and (max-width: 375px) {
+  .sample {
+    background-color: red;
+    font-size: 2rem;
+  }
+  .sample::before {
+    content: "スマホ";
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 576px) {
+  .sample {
+    background-color: green;
+    font-size: 2rem;
+  }
+  .sample::before {
+    content: "sm";
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .sample {
+    background-color: green;
+    font-size: 2rem;
+  }
+  .sample::before {
+    content: "ipad";
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .sample {
+    background-color: pink;
+    font-size: 2rem;
+  }
+  .sample::before {
+    content: "lg";
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .sample {
+    background-color: yellow;
+    font-size: 2rem;
+  }
+  .sample::before {
+    content: "iPadPro";
+  }
+}
