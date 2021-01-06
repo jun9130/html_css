@@ -96,7 +96,7 @@ img.shop-first-image {
 .sample {
   height: 100px;
   width: 100%;
-  background-color: orange;
+  background-color: blueviolet;
   font-size: 2rem;
 }
 .sample::before {
@@ -150,11 +150,22 @@ img.shop-first-image {
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
   .sample {
-    background-color: green;
+    background-color: orange;
     font-size: 2rem;
   }
   .sample::before {
     content: "ipad";
+  }
+  .top-title {
+    text-align: center;
+  }
+  ul.access-list, ul.tag-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .top-contents__shop-image {
+    margin: 0 auto;
   }
 }
 
