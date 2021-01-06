@@ -1,95 +1,37 @@
-.img {
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  height: 500px;
-  width: 100%;
-  opacity: 0.9;
+.shop-data__upper {
+  font-size: 1.5rem;
 }
 
-.top-group {
-  background-color: #fff;
+.shop-data__upper__average-rate, .shop-data__upper__shop-icon-like, .shop-data__upper__shop-icon-review {
+  color: red;
 }
 
+.shop-data__upper__registered-person {
+  font-size: 1rem;
+}
 
-ul.tag-list, ul.access-list{
+.shop-reviews__content {
   display: flex;
-  flex-wrap: wrap;
-}
-.tag-item {
-    background-color: green;
-    border-radius: 2rem;
-}
-.tag-item-link {
-  font-size: 1rem;
+  border-bottom: 2px solid #dfdfdf;
 }
 
-.access-item {
-  background-color: green;
-  border-radius: 2rem;
-  padding: 0.65rem 0.65rem;
-  min-width: 5rem;
-  text-align: center;
-}
-.access-item-link {
-  font-size: 1rem;
+.review-avatar {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.top-contents {
-  flex-wrap: wrap;
-  color: black
-}
-
-.top-contents__shop-image {
-  width: 300px;
-  height: 300px;
-  position: relative;
-}
-
-img.shop-first-image {
-  width: 300px;
-  height: 300px;
-}
-
-.top-contents__shop-access {
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: green;
-  border-radius: 2rem;
-  color: white;
-  padding: 0.65rem 0.65rem;
-  min-width: 5rem;
-  text-align: center;
-}
-.top-contents__shop-name {
-  width: 100%;
+.shop-reviews__content__left__user-name {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: black;
-}
-.top-contents__shop-average {
-  color: red;
-  font-size: 1.2rem;
-  width: 100%;
-}
-.top-contents__shop-icon-like {
-  color: red;
-}
-.top-contents__shop-icon-review {
-  color: red;
+  font-size: 0.8rem;
 }
 
-
-
-
-
-
-
-
-
-
+.shop-reviews__content__main__text {
+  word-break: break-all
+}
 
 
 
@@ -99,6 +41,7 @@ img.shop-first-image {
   background-color: blueviolet;
   font-size: 2rem;
 }
+
 .sample::before {
   content: "デフォルト";
 }
@@ -133,7 +76,6 @@ img.shop-first-image {
   .sample::before {
     content: "sm";
   }
-  
   /* 真ん中寄せ */
   .top-title {
     text-align: center;
@@ -156,6 +98,7 @@ img.shop-first-image {
   .sample::before {
     content: "ipad";
   }
+  /* 真ん中寄せ */
   .top-title {
     text-align: center;
   }
@@ -187,7 +130,6 @@ img.shop-first-image {
   .sample::before {
     content: "iPadPro";
   }
-
   .top-contents__shop-image {
     width: 258px;
     height: 258px;
