@@ -15,11 +15,17 @@
   border-bottom: 2px solid #dfdfdf;
 }
 
+/* 変更 */
 .review-avatar {
-  height: 60px;
-  width: 60px;
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+/* 変更 */
+.shop-reviews__content__left.col-2 {
+  padding-left: 0;
 }
 
 .shop-reviews__content__left__user-name {
