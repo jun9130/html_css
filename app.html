@@ -5,63 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>app</title>
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <style>
-    body {
-      background-color: #f5f5f5;
-    }
-
-    a,
-    a:hover {
-      color: #fff;
-    }
-
-    a:hover {
-      text-decoration: none;
-    }
-
-    li {
-      list-style: none;
-    }
-
-    ul,
-    li {
-      list-style: none;
-    }
-
-    .shop-review-button {
-      display: inline-block;
-      font-size: 0.8rem;
-      margin-left: 10px;
-      padding: 7px 20px;
-      border-radius: 30px;
-      background-color: green;
-      color: white;
-    }
-
-    .shop-edit-button {
-      display: inline-block;
-      font-size: 1rem;
-      margin-left: 10px;
-      padding: 7px 20px;
-      border-radius: 30px;
-      background-color: green;
-      color: white;
-    }
-
-    /* 変更 */
-    .review-delete-btn {
-      display: inline-block;
-      font-size: 0.7rem;
-      /* margin-left: 10px; */
-      padding: 7px 12px;
-      border-radius: 30px;
-      background: green;
-      color: white;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -111,158 +57,163 @@
     <div class="shop-data container my-5 p-5">
       <div class="sample mb-5"></div>
 
-      <!-- カフェ詳細上部 -->
-      <div class="shop-data__upper pb-3">
-        <div class="shop-data__upper__name font-weight-bold">
-          サンマルクカフェ 新宿新南口店
-          <a href="" class="shop-edit-button float-right">編集</a>
-        </div>
-        <div class="shop-data__upper__average d-flex">
-          <div class="shop-data__upper__average-star">
-            <img
-              src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
-              alt="">
-            <img
-              src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
-              alt="">
-            <img
-              src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
-              alt="">
-            <img
-              src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
-              alt="">
-            <img
-              src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
-              alt="">
+
+      <div class="shop-data-group">
+        <!-- カフェ詳細上部 -->
+        <div class="shop-data__upper pb-3">
+          <div class="shop-data__upper__name font-weight-bold">
+            サンマルクカフェ 新宿新南口店
+            <a href="" class="shop-edit-button float-right">編集</a>
           </div>
-          <div class="shop-data__upper__average-rate font-weight-bold pl-3">5.0</div>
-          <div class="shop-data__upper__shop-icon d-flex pl-3">
-            <div class="shop-data__upper__shop-icon-like">
+          <div class="shop-data__upper__average d-flex">
+            <div class="shop-data__upper__average-star">
+              <img
+                src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                alt="">
+              <img
+                src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                alt="">
+              <img
+                src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                alt="">
+              <img
+                src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                alt="">
               <img
                 src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
                 alt="">
             </div>
-            <div class="shop-data__upper__shop-icon-review">
-              <img
-                src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
-                alt="">
+            <div class="shop-data__upper__average-rate font-weight-bold pl-3">5.0</div>
+            <div class="shop-data__upper__shop-icon d-flex pl-3">
+              <div class="shop-data__upper__shop-icon-like">
+                <img
+                  src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                  alt="">
+              </div>
+              <div class="shop-data__upper__shop-icon-review">
+                <img
+                  src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                  alt="">
+              </div>
             </div>
           </div>
-        </div>
-        <div class="shop-data__upper__registered-person">
-          登録者: ユーザー
-          <a href="text-dark"></a>
-        </div>
-      </div>
-
-      <!-- カフェ画像・テーブル -->
-      <div class="shop-data__content d-lg-flex">
-        <div class="shop-data-image">
-          <img src="https://placehold.jp/500x330.png" alt="メイン写真" class="mainImage">
-        </div>
-        <table class="table ml-lg-3">
-          <tr>
-            <th> 最寄駅
-            <td>渋谷駅</td>
-            </th>
-          </tr>
-          <tr>
-            <th> 住所
-            <td>東京都渋谷区1-1-1</td>
-            </th>
-          </tr>
-          <tr>
-            <th> 営業時間
-            <td>7時〜23時</td>
-            </th>
-          </tr>
-          <tr>
-            <th> 定休日
-            <td>月曜日</td>
-            </th>
-          </tr>
-          <tr>
-            <th> 席数
-            <td>100席</td>
-            </th>
-          </tr>
-          <tr>
-            <th> タグ
-            <td></td>
-            </th>
-          </tr>
-          <tr>
-            <th> お気に入り
-            <td></td>
-            </th>
-          </tr>
-        </table>
-      </div>
-
-      <!-- 写真一覧 -->
-      <div class="shop-data-other-images">
-        <div class="shop-data-other-images__header">
-          <div class=" shop-data-other-images__header__title font-weight-bold mb-3">写真</div>
-        </div>
-        <div class="shop-data-other-images__content">
-          <img src="https://placehold.jp/200x165.png" alt="" class="otherImage">
-          <img src="https://placehold.jp/200x165.png" alt="" class="otherImage">
-          <img src="https://placehold.jp/200x165.png" alt="" class="otherImage">
-          <img src="https://placehold.jp/200x165.png" alt="" class="otherImage">
-          <img src="https://placehold.jp/200x165.png" alt="" class="otherImage">
-        </div>
-      </div>
-
-      <!-- レビュー一覧 -->
-      <div class="shop-review my-5">
-        <div class=" shop-review__title font-weight-bold pb-3">
-          レビュー一覧
-          <a href="" class="shop-review-button float-right">レビューを書く</a>
-        </div>
-
-        <!-- レビュー1 変更 -->
-        <div class="shop-review__wrapper pb-5">
-          <div class="shop-reviews__content pt-3 pb-3">
-            <div class="shop-reviews__content__left pb-3 col-2">
-              <div class="shop-reviews__content__left__avatar">
-                <img src="https://placehold.jp/3d4070/ffffff/150x150.png?text=%E3%82%A2%E3%83%90%E3%82%BF%E3%83%BC%0A"
-                  alt="" class="review-avatar my-1">
-              </div>
-              <div class="shop-reviews__content__left__user-name">
-                <a href="" class="text-dark">ユーザーネーム</a>
-              </div>
-            </div>
-            <div class="shop-reviews__content__main col-9">
-              <div class="shop-reviews__content__main__text mr-3 pt-3">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non ducimus dolor natus quidem corrupti
-                eveniet? Maiores cum ratione harum dolorem, dolor saepe eligendi velit aut est numquam quos? Optio,
-                porro!
-              </div>
-              <div class="shop-reviews__content__main__star">
-                <img
-                  src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
-                  alt="">
-                <img
-                  src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
-                  alt="">
-                <img
-                  src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
-                  alt="">
-                <img
-                  src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
-                  alt="">
-                <img
-                  src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
-                  alt="">
-              </div>
-            </div>
-            <div class="shop-reviews__content__delete col-1">
-              <a href="" class="review-delete-btn float-right">削除</a>
-            </div>
+          <div class="shop-data__upper__registered-person">
+            登録者: ユーザー
+            <a href="text-dark"></a>
           </div>
         </div>
 
+        <!-- カフェ画像・テーブル -->
+        <div class="shop-data__content d-lg-flex">
+          <div class="shop-data-image">
+            <img src="https://placehold.jp/500x330.png" alt="メイン写真" class="mainImage">
+          </div>
+          <table class="table ml-lg-3">
+            <tr>
+              <th> 最寄駅
+              <td>渋谷駅</td>
+              </th>
+            </tr>
+            <tr>
+              <th> 住所
+              <td>東京都渋谷区1-1-1</td>
+              </th>
+            </tr>
+            <tr>
+              <th> 営業時間
+              <td>7時〜23時</td>
+              </th>
+            </tr>
+            <tr>
+              <th> 定休日
+              <td>月曜日</td>
+              </th>
+            </tr>
+            <tr>
+              <th> 席数
+              <td>100席</td>
+              </th>
+            </tr>
+            <tr>
+              <th> タグ
+              <td></td>
+              </th>
+            </tr>
+            <tr>
+              <th> お気に入り
+              <td></td>
+              </th>
+            </tr>
+          </table>
+        </div>
+
+        <!-- 写真一覧 -->
+        <div class="shop-data-other-images">
+          <div class="shop-data-other-images__header">
+            <div class=" shop-data-other-images__header__title font-weight-bold mb-3">写真</div>
+          </div>
+          <div class="shop-data-other-images__content">
+            <img src="https://placehold.jp/200x165.png" alt="" class="otherImage">
+            <img src="https://placehold.jp/200x165.png" alt="" class="otherImage">
+            <img src="https://placehold.jp/200x165.png" alt="" class="otherImage">
+            <img src="https://placehold.jp/200x165.png" alt="" class="otherImage">
+            <img src="https://placehold.jp/200x165.png" alt="" class="otherImage">
+          </div>
+        </div>
+
+        <!-- レビュー一覧 -->
+        <div class="shop-review my-5">
+          <div class=" shop-review__title font-weight-bold pb-3">
+            レビュー一覧
+            <a href="" class="shop-review-button float-right">レビューを書く</a>
+          </div>
+
+          <!-- レビュー1 変更 -->
+          <div class="shop-review__wrapper pb-5">
+            <div class="shop-reviews__content pt-3 pb-3">
+              <div class="shop-reviews__content__left pb-3 col-2">
+                <div class="shop-reviews__content__left__avatar">
+                  <img src="https://placehold.jp/3d4070/ffffff/150x150.png?text=%E3%82%A2%E3%83%90%E3%82%BF%E3%83%BC%0A"
+                    alt="" class="review-avatar my-1">
+                </div>
+                <div class="shop-reviews__content__left__user-name">
+                  <a href="" class="text-dark">ユーザーネーム</a>
+                </div>
+              </div>
+              <div class="shop-reviews__content__main col-9">
+                <div class="shop-reviews__content__main__text mr-3 pt-3">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non ducimus dolor natus quidem corrupti
+                  eveniet? Maiores cum ratione harum dolorem, dolor saepe eligendi velit aut est numquam quos? Optio,
+                  porro!
+                </div>
+                <div class="shop-reviews__content__main__star">
+                  <img
+                    src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                    alt="">
+                  <img
+                    src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                    alt="">
+                  <img
+                    src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                    alt="">
+                  <img
+                    src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                    alt="">
+                  <img
+                    src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                    alt="">
+                </div>
+              </div>
+              <div class="shop-reviews__content__delete col-1">
+                <a href="" class="review-delete-btn float-right">削除</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
+
+
     </div>
 
 
