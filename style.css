@@ -32,9 +32,14 @@ li {
   font-size: 1rem;
 }
 
-.shop-reviews__content {
+.shop-reviews-content {
+  /* display: flex; */
+  border: 2px solid #f5f5f5;
+  border-radius: 10px;
+}
+
+.shop-reviews-content__user {
   display: flex;
-  border-bottom: 2px solid #dfdfdf;
 }
 
 /* 変更 */
@@ -46,18 +51,17 @@ li {
 }
 
 /* 変更 */
-.shop-reviews__content__left.col-2 {
+/* .shop-reviews__content__left.col-2 {
   padding-left: 0;
-}
+} */
 
-.shop-reviews__content__left__user-name {
+.shop-reviews-content__user-name {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-size: 0.8rem;
 }
 
-.shop-reviews__content__main__text {
+.shop-reviews-content__main {
   word-break: break-all
 }
 
@@ -71,7 +75,9 @@ li {
 
 th {
   white-space: nowrap; /*項目改行しない*/
+  
 }
+
 
 .shop-review-button {
   display: inline-block;
