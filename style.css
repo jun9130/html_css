@@ -33,7 +33,6 @@ li {
 }
 
 .shop-reviews-content {
-  /* display: flex; */
   border: 2px solid #f5f5f5;
   border-radius: 10px;
 }
@@ -245,12 +244,7 @@ th {
     content: "lg";
   }
 
-  /* カフェ詳細 */
-  /* .shop-data__content {
-    max-width: 500px;
-  }
-  */
-
+  
   .shop-data-group {
     max-width: 500px;
     margin: 0 auto;
