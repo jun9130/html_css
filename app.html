@@ -5,13 +5,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>app</title>
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #f5f5f5;
+    }
+
+    a,
+    a:hover {
+      color: #fff;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    ul,
+    li {
+      list-style: none;
+    }
+  </style>
 </head>
 
 <body>
   <div class="home">
+
     <!-- ヘッダー -->
     <nav class="navbar navbar-expand-lg navbar-light  bg-dark sticky-top">
       <a class="navbar-brand text-white font-weight-bold" href="/">Cafelog</a>
@@ -20,16 +40,6 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="Navbar">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item">
-            <form class="search-form" action="/searches" accept-charset="UTF-8" method="get"><input name="utf8"
-                type="hidden" value="✓">
-              <input class="fas search-form__input" id="keyword" name="keyword" placeholder=" キーワード検索" type="text"
-                value="">
-            </form>
-
-          </li>
-        </ul>
         <ul class="navbar-nav">
           <li class="nav-item">
             <form class="new_user" id="new_user" action="/users/sign_in" accept-charset="UTF-8" method="post"><input
@@ -52,231 +62,481 @@
     </nav>
 
 
-    <!-- 大枠 -->
-    <div class="shop-data container my-5 p-5">
-      <div class="sample mb-5"></div>
-
-
-      <div class="shop-data-group">
-        <!-- カフェ詳細上部 -->
-        <div class="shop-data__upper pb-3">
-          <div class="shop-data__upper__name font-weight-bold">
-            サンマルクカフェ 新宿新南口店
-            <a href="" class="shop-edit-button float-right">編集</a>
-          </div>
-          <div class="shop-data__upper__average d-flex">
-            <div class="shop-data__upper__average-star">
-              <img
-                src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
-                alt="">
-              <img
-                src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
-                alt="">
-              <img
-                src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
-                alt="">
-              <img
-                src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
-                alt="">
-              <img
-                src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
-                alt="">
-            </div>
-            <div class="shop-data__upper__average-rate font-weight-bold pl-3">5.0</div>
-            <div class="shop-data__upper__shop-icon d-flex pl-3">
-              <div class="shop-data__upper__shop-icon-like">
-                <img
-                  src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
-                  alt="">
-              </div>
-              <div class="shop-data__upper__shop-icon-review">
-                <img
-                  src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
-                  alt="">
-              </div>
-            </div>
-          </div>
-          <div class="shop-data__upper__registered-person">
-            登録者: ユーザー
-            <a href="text-dark"></a>
-          </div>
+  
+    <!-- イメージ画像 -->
+    <div class="top-image">
+      <div class="top-image-content">
+        <h1 class="catchCopy">
+          お気に入りの カフェ が<br class="sp">きっと 見つかる
+        </h1>
+        <div class="search-box">
+          <form class="search-form">
+              <input type="text" name="keyword" id="keyword" class="keyword" placeholder="キーワード検索">
+              <button class="search-button">
+                検索
+              </button>
+          </form>
         </div>
+      </div>
+    </div>
 
-        <!-- カフェ画像・テーブル -->
-        <div class="shop-data__content d-lg-flex">
-          <div class="shop-data-image">
-            <img src="https://placehold.jp/500x330.png" alt="メイン写真" class="mainImage">
-          </div>
-          <table class="table ml-lg-3">
-            <tr>
-              <th> 最寄駅
-              <td>渋谷駅</td>
-              </th>
-            </tr>
-            <tr>
-              <th> 住所
-              <td>東京都渋谷区1-1-1</td>
-              </th>
-            </tr>
-            <tr>
-              <th> 営業時間
-              <td>7時〜23時</td>
-              </th>
-            </tr>
-            <tr>
-              <th> 定休日
-              <td>月曜日</td>
-              </th>
-            </tr>
-            <tr>
-              <th> 席数
-              <td>100席</td>
-              </th>
-            </tr>
-            <tr>
-              <th> タグ
-              <td></td>
-              </th>
-            </tr>
-            <tr>
-              <th> お気に入り
-              <td></td>
-              </th>
-            </tr>
-          </table>
+    <!-- メイン -->
+    <div class="top container my-5">
+      <div class="sample"></div>
+
+      <!-- タグから探す -->
+      <div class="top-group mb-5 p-md-5 p-3">
+        <div class="top-title">
+          <h3 class="font-weight-bold">
+            タグから探す
+          </h3>
+          <ul class="tag-list p-3">
+            <li class="tag-item mt-2 mr-2 py-1 px-2">
+              <a href="">wi-fiあり</a>
+            </li>
+            <li class="tag-item mt-2 mr-2 py-1 px-2">
+              <a href="">電源あり</a>
+            </li>
+            <li class="tag-item mt-2 mr-2 py-1 px-2">
+              <a href="">駅から徒歩5分</a>
+            </li>
+            <li class="tag-item mt-2 mr-2 py-1 px-2">
+              <a href="">50席以上</a>
+            </li>
+            <li class="tag-item mt-2 mr-2 py-1 px-2">
+              <a href="">禁煙</a>
+            </li>
+            <li class="tag-item mt-2 mr-2 py-1 px-2">
+              <a href="">分煙</a>
+            </li>
+            <li class="tag-item mt-2 mr-2 py-1 px-2">
+              <a href="">喫煙可</a>
+            </li>
+            <li class="tag-item mt-2 mr-2 py-1 px-2">
+              <a href="">チェーン店</a>
+            </li>
+            <li class="tag-item mt-2 mr-2 py-1 px-2">
+              <a href="">純喫茶</a>
+            </li>
+          </ul>
         </div>
-
-        <!-- 写真一覧 -->
-        <div class="shop-data-other-images">
-          <div class="shop-data-other-images__header">
-            <div class=" shop-data-other-images__header__title font-weight-bold mb-3">写真</div>
-          </div>
-          <div class="shop-data-other-images__content">
-            <img src="https://placehold.jp/200x165.png" alt="" class="otherImage">
-            <img src="https://placehold.jp/200x165.png" alt="" class="otherImage">
-            <img src="https://placehold.jp/200x165.png" alt="" class="otherImage">
-            <img src="https://placehold.jp/200x165.png" alt="" class="otherImage">
-            <img src="https://placehold.jp/200x165.png" alt="" class="otherImage">
-          </div>
-        </div>
-
-        <!-- レビュー一覧 -->
-        <div class="shop-review my-5">
-          <div class=" shop-review__title font-weight-bold pb-3">
-            レビュー一覧
-            <a href="" class="shop-review-button float-right">レビューを書く</a>
-          </div>
-
-          <!-- レビュー1 変更 -->
-          <div class="shop-review-wrapper pb-5"></div>
-            <div class="shop-reviews-content p-3 mb-5">
-              <!-- 上部 -->
-              <div class="shop-reviews-content__user">
-                <div class="shop-reviews-content__user-avatar">
-                  <img src="https://placehold.jp/3d4070/ffffff/150x150.png?text=%E3%82%A2%E3%83%90%E3%82%BF%E3%83%BC%0A"
-                    alt="" class="review-avatar">
-                </div>
-                <div class="shop-reviews-content__user-name">
-                  <a href="" class="text-dark">ユーザーネーム</a>
-                </div>
-              </div>
-              <!-- 評価 -->
-              <div class="shop-reviews-content__star">
-                <img
-                    src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
-                    alt="">
-                  <img
-                    src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
-                    alt="">
-                  <img
-                    src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
-                    alt="">
-                  <img
-                    src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
-                    alt="">
-                  <img
-                    src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
-                    alt="">
-              </div>
-              <!-- レビュー -->
-              <div class="shop-reviews-content__main mr-3 pt-3">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non ducimus dolor natus quidem corrupti
-                  eveniet? Maiores cum ratione harum dolorem, dolor saepe eligendi velit aut est numquam quos? Optio,
-                  porro!
-              </div>    
-              <!-- <div class="shop-reviews__content__delete">
-                <a href="" class="review-delete-btn float-right">削除</a>
-              </div> -->
-            </div>
-            <div class="shop-reviews-content p-3 mb-5">
-              <!-- 上部 -->
-              <div class="shop-reviews-content__user">
-                <div class="shop-reviews-content__user-avatar">
-                  <img src="https://placehold.jp/3d4070/ffffff/150x150.png?text=%E3%82%A2%E3%83%90%E3%82%BF%E3%83%BC%0A"
-                    alt="" class="review-avatar">
-                </div>
-                <div class="shop-reviews-content__user-name">
-                  <a href="" class="text-dark">ユーザーネーム</a>
-                </div>
-              </div>
-              <!-- 評価 -->
-              <div class="shop-reviews-content__star">
-                <img
-                    src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
-                    alt="">
-                  <img
-                    src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
-                    alt="">
-                  <img
-                    src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
-                    alt="">
-                  <img
-                    src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
-                    alt="">
-                  <img
-                    src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
-                    alt="">
-              </div>
-              <!-- レビュー -->
-              <div class="shop-reviews-content__main mr-3 pt-3">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non ducimus dolor natus quidem corrupti
-                  eveniet? Maiores cum ratione harum dolorem, dolor saepe eligendi velit aut est numquam quos? Optio,
-                  porro!
-              </div>    
-              <!-- <div class="shop-reviews__content__delete">
-                <a href="" class="review-delete-btn float-right">削除</a>
-              </div> -->
-            </div>
-            
-          </div>
+        <div class="tag-content row">
 
         </div>
       </div>
 
+      <!-- アクセスから探す -->
+      <div class="top-group mb-5 p-md-5 p-3">
+        <div class="top-title">
+          <h3 class="font-weight-bold">アクセスから探す</h3>
+          <div class="access-content row">
+            <ul class="access-list p-3 font-weight-bold">
+              <li class="access-item mr-md-2 mr-3 mt-2"><a href="">渋谷</a></li>
+              <li class="access-item mr-md-2 mr-3 mt-2"><a href="">新宿</a></li>
+              <li class="access-item mr-md-2 mr-3 mt-2"><a href="">表参道</a></li>
+              <li class="access-item mr-md-2 mr-3 mt-2"><a href="">銀座</a></li>
+              <li class="access-item mr-md-2 mr-3 mt-2"><a href="">東京</a></li>
+              <li class="access-item mr-md-2 mr-3 mt-2"><a href="">原宿</a></li>
+              <li class="access-item mr-md-2 mr-3 mt-2"><a href="">池袋</a></li>
+              <li class="access-item mr-md-2 mr-3 mt-2"><a href="">下北沢</a></li>
+              <li class="access-item mr-md-2 mr-3 mt-2"><a href="">横浜</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
+      <!-- カフェ一覧 -->
+      <div class="top-group mb-5 p-md-5 p-3">
+        <div class="top-title">
+          <h3 class="font-weight-bold">カフェ一覧</h3>
+        </div>
+        <!-- カフェ 9つ-->
+        <div class="top-contents row">
+          <!-- カフェ -->
+          <div class="top-contents__shop font-weight-bold col-12 col-md-6 col-lg-4 py-5">
+            <a class="link" href="#">
+              <div class="top-contents__shop-image">
+                <img class="shop-first-image mx-auto d-block" src="https://placehold.jp/300x300.png">
+                <div class="top-contents__shop-access font-weight-bold">
+                  横浜駅
+                </div>
+                <div class="top-contents__shop-name font-weight-bold">
+                  スターバックスコーヒー ニュウマン横浜店
+                </div>
+                <div class="top-contents__shop-average d-flex">
+                  <div class="top-contents__shop-average-star">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                  </div>
+                  <div class="top-contents__shop-average-rate font-weight-bold pl-2">5.0</div>
+                  <div class="top-contents__shop-icon.d-flex pl-3">
+                    <div class="top-contents__shop-icon-like"></div>
+                    <div class="top-contents__shop-icon-review pl-2"></div>
+                  </div>
+                </div>
+
+              </div>
+            </a>
+          </div>
+          <!-- カフェ -->
+          <div class="top-contents__shop font-weight-bold col-12 col-md-6 col-lg-4 py-5">
+            <a class="link" href="#">
+              <div class="top-contents__shop-image">
+                <img class="shop-first-image mx-auto d-block" src="https://placehold.jp/300x300.png">
+                <div class="top-contents__shop-access font-weight-bold">
+                  横浜駅
+                </div>
+                <div class="top-contents__shop-name font-weight-bold">
+                  スターバックスコーヒー ニュウマン横浜店
+                </div>
+                <div class="top-contents__shop-average d-flex">
+                  <div class="top-contents__shop-average-star">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                  </div>
+                  <div class="top-contents__shop-average-rate font-weight-bold pl-2">5.0</div>
+                  <div class="top-contents__shop-icon.d-flex pl-3">
+                    <div class="top-contents__shop-icon-like"></div>
+                    <div class="top-contents__shop-icon-review pl-2"></div>
+                  </div>
+                </div>
+
+              </div>
+            </a>
+          </div>
+          <!-- カフェ -->
+          <div class="top-contents__shop font-weight-bold col-12 col-md-6 col-lg-4 py-5">
+            <a class="link" href="#">
+              <div class="top-contents__shop-image">
+                <img class="shop-first-image mx-auto d-block" src="https://placehold.jp/300x300.png">
+                <div class="top-contents__shop-access font-weight-bold">
+                  横浜駅
+                </div>
+                <div class="top-contents__shop-name font-weight-bold">
+                  スターバックスコーヒー ニュウマン横浜店
+                </div>
+                <div class="top-contents__shop-average d-flex">
+                  <div class="top-contents__shop-average-star">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                  </div>
+                  <div class="top-contents__shop-average-rate font-weight-bold pl-2">5.0</div>
+                  <div class="top-contents__shop-icon.d-flex pl-3">
+                    <div class="top-contents__shop-icon-like"></div>
+                    <div class="top-contents__shop-icon-review pl-2"></div>
+                  </div>
+                </div>
+
+              </div>
+            </a>
+          </div>
+          <!-- カフェ -->
+          <div class="top-contents__shop font-weight-bold col-12 col-md-6 col-lg-4 py-5">
+            <a class="link" href="#">
+              <div class="top-contents__shop-image">
+                <img class="shop-first-image mx-auto d-block" src="https://placehold.jp/300x300.png">
+                <div class="top-contents__shop-access font-weight-bold">
+                  横浜駅
+                </div>
+                <div class="top-contents__shop-name font-weight-bold">
+                  スターバックスコーヒー ニュウマン横浜店
+                </div>
+                <div class="top-contents__shop-average d-flex">
+                  <div class="top-contents__shop-average-star">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                  </div>
+                  <div class="top-contents__shop-average-rate font-weight-bold pl-2">5.0</div>
+                  <div class="top-contents__shop-icon.d-flex pl-3">
+                    <div class="top-contents__shop-icon-like"></div>
+                    <div class="top-contents__shop-icon-review pl-2"></div>
+                  </div>
+                </div>
+
+              </div>
+            </a>
+          </div>
+          <!-- カフェ -->
+          <div class="top-contents__shop font-weight-bold col-12 col-md-6 col-lg-4 py-5">
+            <a class="link" href="#">
+              <div class="top-contents__shop-image">
+                <img class="shop-first-image mx-auto d-block" src="https://placehold.jp/300x300.png">
+                <div class="top-contents__shop-access font-weight-bold">
+                  横浜駅
+                </div>
+                <div class="top-contents__shop-name font-weight-bold">
+                  スターバックスコーヒー ニュウマン横浜店
+                </div>
+                <div class="top-contents__shop-average d-flex">
+                  <div class="top-contents__shop-average-star">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                  </div>
+                  <div class="top-contents__shop-average-rate font-weight-bold pl-2">5.0</div>
+                  <div class="top-contents__shop-icon.d-flex pl-3">
+                    <div class="top-contents__shop-icon-like"></div>
+                    <div class="top-contents__shop-icon-review pl-2"></div>
+                  </div>
+                </div>
+
+              </div>
+            </a>
+          </div>
+          <!-- カフェ -->
+          <div class="top-contents__shop font-weight-bold col-12 col-md-6 col-lg-4 py-5">
+            <a class="link" href="#">
+              <div class="top-contents__shop-image">
+                <img class="shop-first-image mx-auto d-block" src="https://placehold.jp/300x300.png">
+                <div class="top-contents__shop-access font-weight-bold">
+                  横浜駅
+                </div>
+                <div class="top-contents__shop-name font-weight-bold">
+                  スターバックスコーヒー ニュウマン横浜店
+                </div>
+                <div class="top-contents__shop-average d-flex">
+                  <div class="top-contents__shop-average-star">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                  </div>
+                  <div class="top-contents__shop-average-rate font-weight-bold pl-2">5.0</div>
+                  <div class="top-contents__shop-icon.d-flex pl-3">
+                    <div class="top-contents__shop-icon-like"></div>
+                    <div class="top-contents__shop-icon-review pl-2"></div>
+                  </div>
+                </div>
+
+              </div>
+            </a>
+          </div>
+          <!-- カフェ -->
+          <div class="top-contents__shop font-weight-bold col-12 col-md-6 col-lg-4 py-5">
+            <a class="link" href="#">
+              <div class="top-contents__shop-image">
+                <img class="shop-first-image mx-auto d-block" src="https://placehold.jp/300x300.png">
+                <div class="top-contents__shop-access font-weight-bold">
+                  横浜駅
+                </div>
+                <div class="top-contents__shop-name font-weight-bold">
+                  スターバックスコーヒー ニュウマン横浜店
+                </div>
+                <div class="top-contents__shop-average d-flex">
+                  <div class="top-contents__shop-average-star">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                  </div>
+                  <div class="top-contents__shop-average-rate font-weight-bold pl-2">5.0</div>
+                  <div class="top-contents__shop-icon.d-flex pl-3">
+                    <div class="top-contents__shop-icon-like"></div>
+                    <div class="top-contents__shop-icon-review pl-2"></div>
+                  </div>
+                </div>
+
+              </div>
+            </a>
+          </div>
+          <!-- カフェ -->
+          <div class="top-contents__shop font-weight-bold col-12 col-md-6 col-lg-4 py-5">
+            <a class="link" href="#">
+              <div class="top-contents__shop-image">
+                <img class="shop-first-image mx-auto d-block" src="https://placehold.jp/300x300.png">
+                <div class="top-contents__shop-access font-weight-bold">
+                  横浜駅
+                </div>
+                <div class="top-contents__shop-name font-weight-bold">
+                  スターバックスコーヒー ニュウマン横浜店
+                </div>
+                <div class="top-contents__shop-average d-flex">
+                  <div class="top-contents__shop-average-star">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                  </div>
+                  <div class="top-contents__shop-average-rate font-weight-bold pl-2">5.0</div>
+                  <div class="top-contents__shop-icon.d-flex pl-3">
+                    <div class="top-contents__shop-icon-like"></div>
+                    <div class="top-contents__shop-icon-review pl-2"></div>
+                  </div>
+                </div>
+
+              </div>
+            </a>
+          </div>
+          <!-- カフェ -->
+          <div class="top-contents__shop font-weight-bold col-12 col-md-6 col-lg-4 py-5">
+            <a class="link" href="#">
+              <div class="top-contents__shop-image">
+                <img class="shop-first-image mx-auto d-block" src="https://placehold.jp/300x300.png">
+                <div class="top-contents__shop-access font-weight-bold">
+                  横浜駅
+                </div>
+                <div class="top-contents__shop-name font-weight-bold">
+                  スターバックスコーヒー ニュウマン横浜店
+                </div>
+                <div class="top-contents__shop-average d-flex">
+                  <div class="top-contents__shop-average-star">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                    <img
+                      src="https://placehold.jp/dff20c/ffffff/16x16.png?text=%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8"
+                      alt="">
+                  </div>
+                  <div class="top-contents__shop-average-rate font-weight-bold pl-2">5.0</div>
+                  <div class="top-contents__shop-icon.d-flex pl-3">
+                    <div class="top-contents__shop-icon-like"></div>
+                    <div class="top-contents__shop-icon-review pl-2"></div>
+                  </div>
+                </div>
+
+              </div>
+            </a>
+          </div>
+          
+        </div>
+      </div>
     </div>
 
-
   </div>
-
-
-
-
-
-
-
   <script>
-
-
-
-
-
-
-
-
-
-
   </script>
 </body>
-
 </html>
