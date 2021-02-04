@@ -1,0 +1,258 @@
+.top-image {
+  position: relative;
+  background-color:#a8ff75;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  width: 100%;
+  opacity: 0.9;
+}
+.top-image-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  white-space: nowrap;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
+}
+.catchCopy {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: black 1px 1px 0px, black -1px 1px 0px, black 1px -1px 0px, black -1px -1px 0px;
+}
+.sp {
+  display: none;
+}
+
+.search-box {
+  width: 100%;
+  height: 64px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+
+.search-form input {
+  width: 90%;
+  height: 64px;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.search-form input:focus {
+  outline: none;
+}
+.keyword::placeholder {
+  color: #85837a;
+  font-size: 1.2rem;
+  padding-left: 30px;
+}
+
+.search-button {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  background: #668ad8;/*ボタン色*/
+  color: #FFF;
+  height: 64px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: none;
+}
+
+
+.top-group {
+  background-color: #fff;
+}
+
+
+ul.tag-list, ul.access-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.tag-item {
+    background-color: green;
+    border-radius: 2rem;
+}
+.tag-item-link {
+  font-size: 1rem;
+}
+
+.access-item {
+  background-color: green;
+  border-radius: 2rem;
+  padding: 0.65rem 0.65rem;
+  min-width: 5rem;
+  text-align: center;
+}
+.access-item-link {
+  font-size: 1rem;
+}
+
+.top-contents {
+  flex-wrap: wrap;
+  color: black
+}
+
+.top-contents__shop-image {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+img.shop-first-image {
+  width: 300px;
+  height: 300px;
+}
+
+.top-contents__shop-access {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: green;
+  border-radius: 2rem;
+  color: white;
+  padding: 0.65rem 0.65rem;
+  min-width: 5rem;
+  text-align: center;
+}
+.top-contents__shop-name {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: black;
+}
+.top-contents__shop-average {
+  color: red;
+  font-size: 1.2rem;
+  width: 100%;
+}
+.top-contents__shop-icon-like {
+  color: red;
+}
+.top-contents__shop-icon-review {
+  color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sample {
+  height: 100px;
+  width: 100%;
+  background-color: blueviolet;
+  font-size: 2rem;
+}
+.sample::before {
+  content: "デフォルト";
+}
+
+@media screen and (max-width: 375px) {
+  .sample {
+    background-color: red;
+    font-size: 2rem;
+  }
+  .sample::before {
+    content: "スマホ";
+  }
+  /* 真ん中寄せ */
+  .top-title {
+    text-align: center;
+  }
+  ul.access-list, ul.tag-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .top-contents__shop-image {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 576px) {
+  .sample {
+    background-color: green;
+    font-size: 2rem;
+  }
+  .sample::before {
+    content: "sm";
+  }
+  
+  /* 真ん中寄せ */
+  .top-title {
+    text-align: center;
+  }
+  ul.access-list, ul.tag-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .top-contents__shop-image {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .sample {
+    background-color: orange;
+    font-size: 2rem;
+  }
+  .sample::before {
+    content: "ipad";
+  }
+  .top-title {
+    text-align: center;
+  }
+  ul.access-list, ul.tag-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .top-contents__shop-image {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .sample {
+    background-color: pink;
+    font-size: 2rem;
+  }
+  .sample::before {
+    content: "lg";
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .sample {
+    background-color: yellow;
+    font-size: 2rem;
+  }
+  .sample::before {
+    content: "iPadPro";
+  }
+
+  .top-contents__shop-image {
+    width: 258px;
+    height: 258px;
+    position: relative;
+  }
+  img.shop-first-image {
+    width: 258px;
+    height: 258px;
+  }
+}
