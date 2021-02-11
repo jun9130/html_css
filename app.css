@@ -1,3 +1,21 @@
+body {
+  background-color: #f5f5f5;
+}
+
+a,
+a:hover {
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
 .top-image {
   position: relative;
   background-color:#a8ff75;
@@ -77,7 +95,13 @@ ul.tag-list, ul.access-list{
 .tag-item {
     background-color: green;
     border-radius: 2rem;
+    transition: 0.5s;
 }
+.tag-item:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+
 .tag-item-link {
   font-size: 1rem;
 }

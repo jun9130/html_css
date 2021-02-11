@@ -4,15 +4,11 @@
   box-sizing: border-box;
 }
 
-main {
-  max-width: 1000px;
-  width: 100%;
+.box {
+  width: 500px;
+  height: 300px;
   margin: 50px auto;
-  background-color: #eee;
-  padding: 20px;
-  font-size: 30px;
-}
+  background-color: red;
 
-dt:not(:first-of-type) {
-  margin-top: 30px;
+  transition: 1s;
 }
