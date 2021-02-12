@@ -509,12 +509,18 @@
   
   <script>
     const TargetElement = document.querySelectorAll(".top-contents__shop");
-    console.log(TargetElement)
+    document.addEventListener("scroll", function() {
+      for (let i = 0; i < TargetElement.length; i++) {
+      const getElentDistance = TargetElement[i].getBoundingClientRect().top + TargetElement[i].clientHeight * .3
+      console.log("get", getElentDistance);
+      console.log(window.innerHeight);
+      if (window.innerHeight > getElentDistance) {
+      TargetElement[i].classList.add("show");
+    }
+    }
+    })
 
-    for (let i = 0; i < TargetElement.length; i++) {
-  const getElentDistance = TargetElement[i].getBoundingClientRect().top
-  console.log(getElentDistance)
-}
+   
   </script>
 </body>
 </html>
