@@ -4,11 +4,21 @@
   box-sizing: border-box;
 }
 
-.box {
-  width: 500px;
-  height: 300px;
-  margin: 50px auto;
-  background-color: red;
-
-  transition: 1s;
+ul {
+  list-style: none;
 }
+
+li::before {
+  content: '☆';
+  font-size: 30px;
+}
+
+li::after {
+  content: 'ーー';
+  color: red;
+  margin: 50px;
+}
+
+/* p::before {
+  content: '◎';
+} */
