@@ -4,21 +4,23 @@
   box-sizing: border-box;
 }
 
-ul {
-  list-style: none;
+main {
+  max-width: 1000px;
+  width: 100%;
+  margin: 50px 0;
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 5px;
 }
 
-li::before {
-  content: '☆';
-  font-size: 30px;
-}
-
-li::after {
-  content: 'ーー';
-  color: red;
-  margin: 50px;
-}
-
-/* p::before {
-  content: '◎';
-} */
+.searchButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: blue;
+  color: #fff;
+  font-size: 18px;
+} 
